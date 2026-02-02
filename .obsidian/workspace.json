@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "dee56b64c4e805b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "703727a283767bd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f64b9035db8b8d77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Transmissão de dados.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Transmissão de dados"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8998223fdb547eec",
+    "type": "split",
+    "children": [
+      {
+        "id": "af1ed58d83a239f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c23a43ebb56cc61d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9a3fbd9741dc7a74",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#SOLID  ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "0b89f1694acca584",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "right": {
+    "id": "6eb275a4445b1e7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab8befa25ee3f3be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6065e9456c7e1d6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          },
+          {
+            "id": "714226d592accfd5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "564b22b07836862c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "0ab2b88830b32811",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false
+    }
+  },
+  "active": "f64b9035db8b8d77",
+  "lastOpenFiles": [
+    "Exercicios.md",
+    "Transmissão de dados.md",
+    "Padrão Ethernet.md",
+    "Modelos OSI e TCP IP.md",
+    "Modos de endereçamento.md",
+    "Endereçamento.md",
+    "998 Imagens/exemplo_quadro_ethernet.png",
+    "Pasted image 20260119112257.png",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Vetores.md",
+    "998 Imagens/exemplo_cabecalho_ethernet.png",
+    "998 Imagens/exemplo_cabecalho_ethernet.png",
+    "998 Imagens/exemplo_vetores_metodo_projecoes.png",
+    "998 Imagens/exemplo_vetores_opostos.png",
+    "998 Imagens/exemplo_vetores_metodo_poligonal.png",
+    "998 Imagens/exemplo_vetores_metodo_paralelogramo.png",
+    "998 Imagens/exemplo_vetores_iguais.png",
+    "998 Imagens/exemplo_vetores_escalar.png",
+    "z_archived/110 Estrutura de dados/Lineares/Filas.md",
+    "z_archived/110 Estrutura de dados/Lineares/Arrays.md",
+    "PDFs/redes/[2025-2] Redes - Resumo de todas as aulas.pdf",
+    "PDFs/redes/redes-aula-02.pdf",
+    "PDFs/redes/redes-aula-01.pdf",
+    "z_archived/110 Estrutura de dados/_Index/Estrutura de dados.md",
+    "z_archived/110 Estrutura de dados/Ponteiros.md",
+    "PDFs/redes-aula-14.pdf",
+    "PDFs/redes-aula-13.pdf",
+    "PDFs/redes-aula-12.pdf",
+    "PDFs/redes-aula-11.pdf",
+    "PDFs/redes-aula-07.pdf",
+    "PDFs/redes-aula-05.pdf",
+    "PDFs/redes-aula-04.pdf",
+    "100 Redes/_Redes - MOC.md",
+    "Camadas TCP IP.md",
+    "100 Lógica matemática/Operações lógicas.md",
+    "z_archived/110 Estrutura de dados/Não lineares/Árvores.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Sistemas lineares.md",
+    "z_archived/110 Estrutura de dados/Lineares/Listas encadeadas.md",
+    "z_archived/110 Estrutura de dados/Lineares/Pilhas.md",
+    "z_archived/110 Estrutura de dados/Não lineares/Grafos.md",
+    "z_archived/110 Estrutura de dados/Lineares/Matrizes.md",
+    "110 Estrutura de dados/_Index/Estrutura de dados lineares.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Teoria dos conjuntos.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Matrizes.md",
+    "Exercicios - Lista 4.md",
+    "100 Lógica matemática/_Index/Lógia matemática.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/_Index/Geometria analítica e Álgebra linear.md",
+    "Sem título.canvas"
+  ]
+}
