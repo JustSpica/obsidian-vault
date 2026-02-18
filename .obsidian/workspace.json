@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "703727a283767bd6",
+        "id": "c510cc0209cb9077",
         "type": "tabs",
         "children": [
           {
-            "id": "f64b9035db8b8d77",
+            "id": "4f4f4040b299f3ac",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Transmissão de dados.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Transmissão de dados"
+              "title": "New tab"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#SOLID  ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +57,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 278.5
   },
   "right": {
     "id": "6eb275a4445b1e7f",
@@ -164,54 +160,53 @@
       "random-note:Open random note": false
     }
   },
-  "active": "f64b9035db8b8d77",
+  "active": "c23a43ebb56cc61d",
   "lastOpenFiles": [
+    "100 Redes/Enlace/Topologias e Segmentação de redes LAN.md",
+    "100 Redes/Enlace/Transmissão de dados.md",
+    "100 Redes/Enlace/VLANs e 802.1Q.md",
+    "997 Livros/Redes",
+    "100 Redes/Modelos OSI e TCP IP.md",
+    "100 Redes/Enlace/Padrão Ethernet.md",
+    "998 Imagens/exemplo_bridges_vlan.png",
+    "998 Imagens/exemplo_cascateamento_hubs.png",
+    "Pasted image 20260217224820.png",
+    "Pasted image 20260217224741.png",
+    "Pasted image 20260217224625.png",
+    "Pasted image 20260217224624.png",
+    "998 Imagens/exemplo_quadro_ethernet.png",
+    "998 Imagens/exemplo_quadro_ethernet.png",
+    "998 Imagens/exemplo_vetores_metodo_paralelogramo.png",
+    "998 Imagens/exemplo_vetores_metodo_poligonal.png",
+    "999 Aulas PDFs/100 Redes/redes-aula-02.pdf",
+    "100 Redes/Enlace",
+    "999 Aulas PDFs/100 Redes/redes-aula-01.pdf",
     "Exercicios.md",
-    "Transmissão de dados.md",
-    "Padrão Ethernet.md",
-    "Modelos OSI e TCP IP.md",
+    "Untitled.base",
+    "100 Redes/Roteamento Estático e NAT.md",
+    "100 Redes/IPv4.md",
+    "100 Redes/Camada de Transporte.md",
+    "100 Redes/ICMP.md",
+    "997 Livros/Redes/livro-tanenbaum.pdf",
+    "997 Livros",
+    "Untitled.md",
+    "999 Aulas PDFs/100 Redes/redes-resumo.pdf",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Vetores.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Teoria dos conjuntos.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Sistemas lineares.md",
+    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Matrizes.md",
     "Modos de endereçamento.md",
     "Endereçamento.md",
-    "998 Imagens/exemplo_quadro_ethernet.png",
-    "Pasted image 20260119112257.png",
-    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Vetores.md",
-    "998 Imagens/exemplo_cabecalho_ethernet.png",
-    "998 Imagens/exemplo_cabecalho_ethernet.png",
-    "998 Imagens/exemplo_vetores_metodo_projecoes.png",
-    "998 Imagens/exemplo_vetores_opostos.png",
-    "998 Imagens/exemplo_vetores_metodo_poligonal.png",
-    "998 Imagens/exemplo_vetores_metodo_paralelogramo.png",
-    "998 Imagens/exemplo_vetores_iguais.png",
-    "998 Imagens/exemplo_vetores_escalar.png",
     "z_archived/110 Estrutura de dados/Lineares/Filas.md",
     "z_archived/110 Estrutura de dados/Lineares/Arrays.md",
-    "PDFs/redes/[2025-2] Redes - Resumo de todas as aulas.pdf",
-    "PDFs/redes/redes-aula-02.pdf",
-    "PDFs/redes/redes-aula-01.pdf",
     "z_archived/110 Estrutura de dados/_Index/Estrutura de dados.md",
     "z_archived/110 Estrutura de dados/Ponteiros.md",
     "PDFs/redes-aula-14.pdf",
     "PDFs/redes-aula-13.pdf",
-    "PDFs/redes-aula-12.pdf",
-    "PDFs/redes-aula-11.pdf",
-    "PDFs/redes-aula-07.pdf",
-    "PDFs/redes-aula-05.pdf",
-    "PDFs/redes-aula-04.pdf",
     "100 Redes/_Redes - MOC.md",
     "Camadas TCP IP.md",
     "100 Lógica matemática/Operações lógicas.md",
     "z_archived/110 Estrutura de dados/Não lineares/Árvores.md",
-    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Sistemas lineares.md",
-    "z_archived/110 Estrutura de dados/Lineares/Listas encadeadas.md",
-    "z_archived/110 Estrutura de dados/Lineares/Pilhas.md",
-    "z_archived/110 Estrutura de dados/Não lineares/Grafos.md",
-    "z_archived/110 Estrutura de dados/Lineares/Matrizes.md",
-    "110 Estrutura de dados/_Index/Estrutura de dados lineares.md",
-    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Teoria dos conjuntos.md",
-    "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Matrizes.md",
-    "Exercicios - Lista 4.md",
-    "100 Lógica matemática/_Index/Lógia matemática.md",
-    "z_archived/500 Geometria analítica e Álgebra linear/_Index/Geometria analítica e Álgebra linear.md",
     "Sem título.canvas"
   ]
 }

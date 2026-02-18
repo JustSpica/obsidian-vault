@@ -18,7 +18,7 @@ Dividido em 7 camandas:
 O modelo TCP/IP bruto é divido em 4 camadas, mas para fins de estudo vou usar o modelo Tanenbaum que adiciona a camada **física** como uma camada própria do modelo.
 
 1. **Física:** Conversão de bits em sinais elétricos. (No modelo tradicional, essa camada é aglutinada com a camada de enlace).
-2. **Enlace:** Igual ao modelo OSI, com a diferença que usa Ethernet.
+2. **Enlace:** Igual ao modelo OSI, com a diferença que usa [[Padrão Ethernet|Ethernet]].
 3. **Rede:** Igual ao modelo OSI, com a diferença que usa IPV4/IPV6, ICMP, ARP...
 4. **Transporte:** Igual ao modelo OSI, com a diferença que permite a multiplexação via portas e usa TCP ou UDP.
 5. **Aplicação:** Junção das camadas **sessão, apresentação e aplicação** do modelo OSI. É o lugar onde é encapsulado outros protocolos como **DHCP**, **HTTP**, **DNS** e por ai vai.
@@ -29,7 +29,7 @@ Para os dados trafegarem, cada camada adiciona seu próprio cabeçalho nos dados
 1. **Aplicação:** Gera os Dados. 
 2. **Transporte:** Adiciona cabeçalho (portas origem/destino) e vira segmento (TCP) ou datagrama (UDP). 
 3. **Rede:** Adiciona cabeçalho (IP origem/destino) e vira pacote.
-4. **Enlace:** Adiciona cabeçalho (MAC origem/destino) e checagem de erro para gerar um *frame*.
+4. **Enlace:** Adiciona cabeçalho (MAC origem/destino) e checagem de erro para gerar um quadro.
 5. **Física:** Transmite como bits no fio/ar.
 
 ## **Referências**
