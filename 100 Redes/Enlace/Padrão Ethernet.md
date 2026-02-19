@@ -1,6 +1,6 @@
 # Ethernet (IEEE 802.x)
 
-O padrão Ethernet (IEEE 802.x) é uma família de padrões que define as camadas **física** e ***enlace*** da pilha [[Modelos OSI e TCP IP|TCP/IP]], para redes locais.
+O padrão Ethernet (IEEE 802.x) é uma família de padrões que define as [[Modelos OSI e TCP IP|camadas física e enlance]] da pilha [[Modelos OSI e TCP IP|TCP/IP]], para redes locais.
 
 Alguns protocólos mais conhecidos da família IEEE 802.x:
 
@@ -29,7 +29,7 @@ Se o tamanho do campo de 16 bits for <= 1500 (05DC) ele expressa ***length***, s
 
 Ethernet II é mais comum em LAN corporativa/Internet, mas o termo "802.3" continua sendo usado para falar do "Padrão Ethernet" como um todo.
 
-***OBS:** Preâmbulo (sequência de bits para sincronizarr o receptor) e SFD (byte que marca o inicio do quadro lógico ethernet) fazem parte da camada física e não da camada de enlace.*
+***OBS:** Preâmbulo (sequência de bits para sincronizar o receptor) e SFD (byte que marca o inicio do quadro lógico ethernet) fazem parte da camada física e não da camada de enlace.*
 
 ***OBS:** O tamanho minimo do payload em um quadro é 46 bytes e o máximo de dados é 1500 bytes. Se o payload for < 46 bytes, o campo será completado com padding.*
 
@@ -39,7 +39,6 @@ Na [[Modelos OSI e TCP IP|camada de enlace]], a placa de rede só passa para as 
 2. Se o MAC destino for igual ao MAC da placa de rede.
 3. Se o pacote for [[Transmissão de dados|multicast]] e a placa de rede estiver participando desse grupo.
 4. Se a placa estiver em modo promíscuo (A placa aceita todos os pacotes)
-
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-02.pdf|Redes - Aula 02]].

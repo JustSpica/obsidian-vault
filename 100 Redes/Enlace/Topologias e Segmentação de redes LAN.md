@@ -34,7 +34,8 @@ Tanenbaum explica que, quando dois dispositivos transmitem simultaneamente, ocor
 Tanenbaum comenta que protocolos de camadas superiores usam difusão (ex: descobrir endereço MAC por IP), e que ao interconectar muitas LANs, o volume de broadcast cresce.
 
 ***OBS:** Ambos os 3 dispositivos operam na [[Modelos OSI e TCP IP|camada de enlace]].*
-***OBS2:** Segmentar com bridge/switch ajuda muito contra colisão, mas não resolve sozinho excesso de broadcast.*
+
+***OBS:** Segmentar com bridge/switch ajuda muito contra colisão, mas não resolve sozinho excesso de broadcast.*
 ### Cascateamento
 
 Nada mais é do que a conexão de múltiplos hubs/bridges/switches em série. 

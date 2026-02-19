@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c510cc0209cb9077",
+        "id": "29792dc8ef516cc6",
         "type": "tabs",
         "children": [
           {
-            "id": "4f4f4040b299f3ac",
+            "id": "a189758a9a849156",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "VLANs e Protocolo IEEE 802.1q"
             }
           }
         ]
@@ -160,14 +164,19 @@
       "random-note:Open random note": false
     }
   },
-  "active": "c23a43ebb56cc61d",
+  "active": "a189758a9a849156",
   "lastOpenFiles": [
     "100 Redes/Enlace/Topologias e Segmentação de redes LAN.md",
-    "100 Redes/Enlace/Transmissão de dados.md",
-    "100 Redes/Enlace/VLANs e 802.1Q.md",
-    "997 Livros/Redes",
-    "100 Redes/Modelos OSI e TCP IP.md",
     "100 Redes/Enlace/Padrão Ethernet.md",
+    "998 Imagens/exemplo_802.1q_switches.png",
+    "100 Redes/Enlace/Transmissão de dados.md",
+    "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
+    "100 Redes/Modelos OSI e TCP IP.md",
+    "100 Redes/Enlace/Protocolo IEEE 802.1q.md",
+    "998 Imagens/exemplo_cabecalho_802.1q.png",
+    "README.md",
+    "997 Livros/Redes/livro-tanenbaum.pdf",
+    "997 Livros/Redes",
     "998 Imagens/exemplo_bridges_vlan.png",
     "998 Imagens/exemplo_cascateamento_hubs.png",
     "Pasted image 20260217224820.png",
@@ -176,8 +185,6 @@
     "Pasted image 20260217224624.png",
     "998 Imagens/exemplo_quadro_ethernet.png",
     "998 Imagens/exemplo_quadro_ethernet.png",
-    "998 Imagens/exemplo_vetores_metodo_paralelogramo.png",
-    "998 Imagens/exemplo_vetores_metodo_poligonal.png",
     "999 Aulas PDFs/100 Redes/redes-aula-02.pdf",
     "100 Redes/Enlace",
     "999 Aulas PDFs/100 Redes/redes-aula-01.pdf",
@@ -187,7 +194,6 @@
     "100 Redes/IPv4.md",
     "100 Redes/Camada de Transporte.md",
     "100 Redes/ICMP.md",
-    "997 Livros/Redes/livro-tanenbaum.pdf",
     "997 Livros",
     "Untitled.md",
     "999 Aulas PDFs/100 Redes/redes-resumo.pdf",
@@ -205,8 +211,6 @@
     "PDFs/redes-aula-13.pdf",
     "100 Redes/_Redes - MOC.md",
     "Camadas TCP IP.md",
-    "100 Lógica matemática/Operações lógicas.md",
-    "z_archived/110 Estrutura de dados/Não lineares/Árvores.md",
     "Sem título.canvas"
   ]
 }

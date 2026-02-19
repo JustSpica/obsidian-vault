@@ -31,7 +31,6 @@ Para os dados trafegarem, cada camada adiciona seu próprio cabeçalho nos dados
 3. **Rede:** Adiciona cabeçalho (IP origem/destino) e vira pacote.
 4. **Enlace:** Adiciona cabeçalho (MAC origem/destino) e checagem de erro para gerar um quadro.
 5. **Física:** Transmite como bits no fio/ar.
-
 ## **Referências**
 
 - Baseado no PDF do La salle [[redes-aula-01.pdf|Redes - Aula 01]].

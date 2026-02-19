@@ -19,7 +19,6 @@ Existem três modos:
 1. **Simplex:** Ocorre em uma direção fixa, com transmissor e receptor. Exemplo: transmissão de rádio ou TV.
 2. **Half-Duplex:** Bidirecional, mas não simultaneamente. Os dispositivos se refezam entre transmissor e receptor. Exemplo: walkie-talkie
 3. **Full-Duplex:** Bidirecional simultâneo. Nesse caso requer dois canais físicos separados (um par de fios trançados ou dois cabos ópticos) ou multiplexação de frequência no caso de fibra ópica. Exemplo: switch moderno, telefonia, ethernet via par trançado (cat5e+)
-
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-01.pdf|Redes - Aula 01]].
