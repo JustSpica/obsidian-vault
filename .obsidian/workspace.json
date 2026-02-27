@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100 Redes/Modelos OSI e TCP IP.md",
+                "file": "100 Redes/Rede/Classes de IPv4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modelos OSI e TCP IP"
+              "title": "Classes de IPv4"
             }
           }
         ]
@@ -166,9 +166,9 @@
   },
   "active": "f46c00162bef9668",
   "lastOpenFiles": [
+    "100 Redes/Rede/IPv4.md",
     "100 Redes/Modelos OSI e TCP IP.md",
     "100 Redes/Rede/Roteamento IPv4, Gateway e NAT.md",
-    "100 Redes/Rede/IPv4.md",
     "100 Redes/Rede/ICMP.md",
     "100 Redes/Rede/Classes de IPv4.md",
     "100 Redes/Rede/CIDR e Mascara de Rede (IPv4).md",
