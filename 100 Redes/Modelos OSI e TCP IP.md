@@ -1,38 +1,55 @@
-# Modelos de camadas
+# Modelos OSI e TCP/IP
 
-Cada camada possui uma função especifica, comunicando-se apenas com a superior e a inferior, possibilitando a troca de camada por outra de forma transparente (sem interferências entre as camadas).
-## **Modelo OSI**
+Modelos de referência organizam uma rede em camadas. A ideia central é modularidade, cada camada oferece serviços para a de cima e usa os serviços da de baixo, reduzindo acoplamento e facilitando evolução/troca de implementações.
 
-Dividido em 7 camandas:
+*OBS: Modelo de referência é diferente de uma pilha de protocolos concreta. Ex.: o modelo OSI é uma referência, já a Internet usa a pilha TCP/IP (IP, TCP, UDP, etc.).*
+## Modelo OSI (referência)
 
-1. **Física:** Transmissão de dados por sinais digitais (0v = 0, 5v = 1). Formas de transmissão: [[Transmissão de dados|simplex, half-duplex ou full-duplex]].
-2. **Enlace:** Estabele a conexão ponto a ponto, realizando controle de fluxo e detecção de erros, através do ***MAC address*** e ***LAN***.
-3. **Rede:** Traça o caminho dos pacotes da origem até o destino. Roteamento e endereçamento IP.
-4. **Transporte:** Realiza o transporte confiável dos pacotes da origem até destino.
-5. **Sessão:** Realiza a conexão entre os dispositivos, estabelecendo uma comunicação entre eles.
-6. **Apresentação:** Padroniza os dados em um formato em comum, entendido pelo protocolo usado, para mostrar na camada de aplicação.
-7. **Aplicação:** Um programa obtem os dados e o usuário pode interagir com ele.
+O OSI foi pensado como um modelo geral e mais formal para padronização. Ele define **7 camadas**:
 
-## **Modelo TCP/IP**
+1. **Física:** Transmissão de bits brutos pelo meio (sinais, sincronização, conectores, taxas).
+2. **Enlace:** Entrega nó-a-nó; quadros, detecção de erros e controle de acesso ao meio (MAC) em redes de difusão.
+3. **Rede:** Roteamento e endereçamento lógico para levar pacotes entre redes.
+4. **Transporte:** Comunicação fim a fim entre processos; segmentação e confiabilidade/ordenação quando necessário.
+5. **Sessão:** Controle de diálogo e gestão de sessão (ex.: sincronização/checkpoints).
+6. **Apresentação:** Representação dos dados (sintaxe/semântica, codificações/formatos).
+7. **Aplicação:** Protocolos usados diretamente por aplicações (ex.: Web, e-mail, nomes).
 
-O modelo TCP/IP bruto é divido em 4 camadas, mas para fins de estudo vou usar o modelo Tanenbaum que adiciona a camada **física** como uma camada própria do modelo.
+Tanenbaum destaca como grande contribuição do OSI a distinção explícita entre **serviço**, **interface** e **protocolo** (o que a camada fornece vs como se acessa vs como é implementado).
 
-1. **Física:** Conversão de bits em sinais elétricos. (No modelo tradicional, essa camada é aglutinada com a camada de enlace).
-2. **Enlace:** Igual ao modelo OSI, com a diferença que usa [[Padrão Ethernet|Ethernet]].
-3. **Rede:** Igual ao modelo OSI, com a diferença que usa IPV4/IPV6, ICMP, ARP...
-4. **Transporte:** Igual ao modelo OSI, com a diferença que permite a multiplexação via portas e usa TCP ou UDP.
-5. **Aplicação:** Junção das camadas **sessão, apresentação e aplicação** do modelo OSI. É o lugar onde é encapsulado outros protocolos como **DHCP**, **HTTP**, **DNS** e por ai vai.
+Na prática, os protocolos OSI raramente são usados, mas o modelo continua útil para comparação e raciocínio.
+## Modelo TCP/IP (Internet)
 
-### **Processo de Encapsulamento**
+No TCP/IP, os protocolos vieram primeiro e o modelo virou uma descrição da pilha da Internet. A forma clássica do modelo tem **4 camadas**:
 
-Para os dados trafegarem, cada camada adiciona seu próprio cabeçalho nos dados vindos de cima:
-1. **Aplicação:** Gera os Dados. 
-2. **Transporte:** Adiciona cabeçalho (portas origem/destino) e vira segmento (TCP) ou datagrama (UDP). 
-3. **Rede:** Adiciona cabeçalho (IP origem/destino) e vira pacote.
-4. **Enlace:** Adiciona cabeçalho (MAC origem/destino) e checagem de erro para gerar um quadro.
-5. **Física:** Transmite como bits no fio/ar.
-## **Referências**
+1. **Enlace (host/rede):** Como um host se conecta e envia/recebe em uma rede específica (ex.: Ethernet, Wi-Fi).
+2. **Rede:** Entrega de pacotes entre redes (IP) e roteamento.
+3. **Transporte:** Comunicação fim a fim (TCP/UDP) e multiplexação por portas.
+4. **Aplicação:** Protocolos de alto nível usados por programas (ex.: HTTP, DNS, SMTP).
 
-- Baseado no PDF do La salle [[redes-aula-01.pdf|Redes - Aula 01]].
-- O vídeo [Como sua Internet Funciona | Introdução a Redes Parte 3](https://youtu.be/gcv5hXyTcIo?t=103]) da série de redes do canal Fábio Akita, a partir do momento **01:43** explica o comparativo entre o modelo OSI e TCP/IP.
-- Os artigos [Desmistificando Redes de Computadores: Diferenças entre Modelos OSI e TCP/IP.](https://www.estrategiaconcursos.com.br/blog/redes-computadores-modelos-osi-tcp-ip/) e [Principal diferença entre o modelo TCP/IP e OSI](https://www.fortinet.com/br/resources/cyberglossary/tcp-ip-model-vs-osi-model) explicam de forma resumida, e boa, sobre os dois modelos.
+Tanenbaum separa a camada de enlace do modelo TCP/IP em **Física + Enlace**, resultando em um modelo de **5 camadas**, mas estritamente não faz parte do modelo TCP/IP original.
+
+No TCP/IP não existem camadas separadas de **Sessão** e **Apresentação**, essas funções aparecem quando necessário dentro da camada de **Aplicação**.
+## Comparação
+
+- **Camadas:** OSI (7) vs TCP/IP (4, ou 5 na versão didática).
+- **Formalismo:** OSI separa bem serviço/interface/protocolo e TCP/IP historicamente é menos rigoroso nessa distinção.
+- **Origem:** OSI foi definido antes dos protocolos e TCP/IP descreve protocolos já existentes.
+- **Generalidade:** OSI é mais “universal” como modelo e TCP/IP descreve muito bem a pilha da Internet, mas é pior para descrever outras pilhas.
+- **Conexões:** no TCP/IP, a camada Internet é sem conexão e na camada de transporte existem opções com e sem conexão (ex.: TCP vs UDP). O OSI contempla modos diferentes dependendo da camada.
+## Encapsulamento
+
+Ao descer a pilha, cada camada adiciona informação de controle (tipicamente um cabeçalho. Em enlace é comum haver **trailer/FCS**). No destino ocorre o **desencapsulamento**:
+
+1. **Aplicação:** Gera os Dados.
+2. **Transporte:** Adiciona cabeçalho (portas origem/destino) e vira segmento (TCP) ou datagrama (UDP).
+3. **Rede:** Adiciona cabeçalho (IP origem/destino) e vira pacote.
+4. **Enlace:** Adiciona cabeçalho (MAC origem/destino) e checagem de erro para gerar um quadro.
+5. **Física:** Transmite como bits no fio/ar.
+
+*OBS: Em geral, o cabeçalho de enlace é local por salto (muda a cada rede). Já IP e transporte são fim a fim (com alguns campos podendo ser atualizados no caminho, como TTL/hop limit).* 
+## Referências
+
+- Baseado no PDF [[redes-resumo.pdf|Redes - Resumo]] e [[redes-aula-01.pdf|Redes - Aula 01]].
+- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- O vídeo [Como sua Internet Funciona | Introdução a Redes Parte 3](https://youtu.be/gcv5hXyTcIo?t=103%5D) da série de redes do canal Fábio Akita, a partir do momento **01:43** explica o comparativo entre o modelo OSI e TCP/IP.

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "29792dc8ef516cc6",
+        "id": "1b8ca1afb2d57ab0",
         "type": "tabs",
         "children": [
           {
-            "id": "a189758a9a849156",
+            "id": "f46c00162bef9668",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
+                "file": "100 Redes/Modelos OSI e TCP IP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VLANs e Protocolo IEEE 802.1q"
+              "title": "Modelos OSI e TCP IP"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 292.5
   },
   "right": {
     "id": "6eb275a4445b1e7f",
@@ -164,39 +164,46 @@
       "random-note:Open random note": false
     }
   },
-  "active": "a189758a9a849156",
+  "active": "f46c00162bef9668",
   "lastOpenFiles": [
+    "100 Redes/Modelos OSI e TCP IP.md",
+    "100 Redes/Rede/Roteamento IPv4, Gateway e NAT.md",
+    "100 Redes/Rede/IPv4.md",
+    "100 Redes/Rede/ICMP.md",
+    "100 Redes/Rede/Classes de IPv4.md",
+    "100 Redes/Rede/CIDR e Mascara de Rede (IPv4).md",
+    "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
+    "100 Redes/Enlace/Transmissão de dados.md",
     "100 Redes/Enlace/Topologias e Segmentação de redes LAN.md",
     "100 Redes/Enlace/Padrão Ethernet.md",
-    "998 Imagens/exemplo_802.1q_switches.png",
-    "100 Redes/Enlace/Transmissão de dados.md",
-    "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
-    "100 Redes/Modelos OSI e TCP IP.md",
-    "100 Redes/Enlace/Protocolo IEEE 802.1q.md",
+    "999 Aulas PDFs/100 Redes/redes-aula-11.pdf",
+    "999 Aulas PDFs/100 Redes/redes-aula-07.pdf",
+    "998 Imagens/exemplo_cabecalho_icmp.png",
+    "998 Imagens/exemplo_roteamento_nat_1_to_1.png",
+    "Exercicios.md",
+    "998 Imagens/exemplo_roteamento_estático.png",
+    "999 Aulas PDFs/100 Redes/redes-aula-03.pdf",
+    "999 Aulas PDFs/100 Redes/redes-aula-02.pdf",
+    "999 Aulas PDFs/100 Redes/redes-aula-01.pdf",
+    "999 Aulas PDFs/100 Redes/redes-aula-05.pdf",
+    "998 Imagens/exemplo_ip_mascara_or.png",
+    "998 Imagens/exemplo_ip_mascara_and.png",
+    "Pasted image 20260226051403.png",
+    "999 Aulas PDFs/100 Redes/redes-resumo.pdf",
+    "998 Imagens/exemplo_cabecalho_ipv4.png",
+    "998 Imagens/exemplo_cabecalho_ipv4.png",
+    "Pasted image 20260221012116.png",
     "998 Imagens/exemplo_cabecalho_802.1q.png",
+    "100 Redes/Rede",
+    "100 Redes/Enlace/Protocolo IEEE 802.1q.md",
     "README.md",
     "997 Livros/Redes/livro-tanenbaum.pdf",
     "997 Livros/Redes",
-    "998 Imagens/exemplo_bridges_vlan.png",
-    "998 Imagens/exemplo_cascateamento_hubs.png",
-    "Pasted image 20260217224820.png",
-    "Pasted image 20260217224741.png",
-    "Pasted image 20260217224625.png",
-    "Pasted image 20260217224624.png",
-    "998 Imagens/exemplo_quadro_ethernet.png",
-    "998 Imagens/exemplo_quadro_ethernet.png",
-    "999 Aulas PDFs/100 Redes/redes-aula-02.pdf",
-    "100 Redes/Enlace",
-    "999 Aulas PDFs/100 Redes/redes-aula-01.pdf",
-    "Exercicios.md",
-    "Untitled.base",
     "100 Redes/Roteamento Estático e NAT.md",
     "100 Redes/IPv4.md",
     "100 Redes/Camada de Transporte.md",
     "100 Redes/ICMP.md",
-    "997 Livros",
     "Untitled.md",
-    "999 Aulas PDFs/100 Redes/redes-resumo.pdf",
     "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Vetores.md",
     "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Teoria dos conjuntos.md",
     "z_archived/500 Geometria analítica e Álgebra linear/Algebra linear/Sistemas lineares.md",
@@ -204,13 +211,6 @@
     "Modos de endereçamento.md",
     "Endereçamento.md",
     "z_archived/110 Estrutura de dados/Lineares/Filas.md",
-    "z_archived/110 Estrutura de dados/Lineares/Arrays.md",
-    "z_archived/110 Estrutura de dados/_Index/Estrutura de dados.md",
-    "z_archived/110 Estrutura de dados/Ponteiros.md",
-    "PDFs/redes-aula-14.pdf",
-    "PDFs/redes-aula-13.pdf",
-    "100 Redes/_Redes - MOC.md",
-    "Camadas TCP IP.md",
     "Sem título.canvas"
   ]
 }
