@@ -13,7 +13,7 @@ Um endereço IPv4 tem **32 bits** e normalmente é escrito em decimal pontuado (
 
 O IPv4 encapsula dados em um **datagrama** composto por cabeçalho + payload. O tamanho mínimo do cabeçalho é de **20 bytes** (5 words) e máximo **60 bytes** (com opções).
 
-**Exemplo cabeçalho IPV4:** ![[exemplo_cabecalho_ipv4.png]]
+**Exemplo cabeçalho IPv4:** ![[exemplo_cabecalho_ipv4.png]]
 
 - **Versão (4 bits):** `0100 = 4` no IPv4.
 - **IHL (4 bits):** tamanho do cabeçalho em words de 32 bits (ex.: `5` significa 20 bytes).
