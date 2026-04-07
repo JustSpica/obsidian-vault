@@ -5,7 +5,7 @@ node_size: 32
 
 Esta nota funciona como um **mapa de conteúdo** para os assuntos de redes de computadores deste vault. A ideia é servir como ponto de entrada para revisar os conceitos principais e navegar entre as notas mais específicas.
 
-Em geral, redes podem ser estudadas em camadas: primeiro os **modelos de referência**, depois os conceitos de **enlace** (como quadros circulam em uma rede local) e por fim os conceitos de **rede** (como pacotes são endereçados e roteados entre redes diferentes).
+Em geral, redes podem ser estudadas em camadas: primeiro os **modelos de referência**, depois os conceitos de **enlace** (como quadros circulam em uma rede local), em seguida os conceitos de **rede** (como pacotes são endereçados e roteados entre redes diferentes) e por fim **transporte** (como processos se comunicam fim a fim).
 ## Modelos e visão geral
 
 - [[Modelos OSI e TCP IP]]: Visão geral das camadas, comparação entre OSI e TCP/IP e encapsulamento.
@@ -32,3 +32,10 @@ Essas notas focam em como um endereço IPv4 vira rede, host, broadcast e como is
 - [[Classes de IPv4]]: Visão histórica do endereçamento por classes.
 - [[CIDR e Mascara de Rede (IPv4)]]: Prefixo, máscara, rede, broadcast e sub-redes.
 - [[Roteamento IPv4, Gateway e NAT]]: Decisão local vs remoto, gateway, tabelas de roteamento e NAT.
+
+## Camada de transporte
+
+Assuntos ligados à comunicação fim a fim entre processos, usando portas e protocolos de transporte.
+
+- [[Portas e processos]]: Auto explicativo.
+- [[UDP]]: Cabeçalho, características do serviço, casos de uso e limites de confiabilidade.
