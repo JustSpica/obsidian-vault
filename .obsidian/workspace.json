@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "8b2b1fe2d8d34ae0",
+        "id": "5a8c52dda43d6edd",
         "type": "tabs",
         "children": [
           {
-            "id": "e23f3d531d56ae60",
+            "id": "efc3997900d75a21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100 Redes/Transporte/UDP.md",
+                "file": "100 Notas de referência/Redes/Transporte/UDP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "UDP"
             }
-          },
-          {
-            "id": "45da268590bfcf07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "100 Redes/_Index/Redes de Computadores.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Redes de Computadores"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 321.5
+    "width": 306.5
   },
   "right": {
     "id": "6eb275a4445b1e7f",
@@ -179,54 +164,53 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "45da268590bfcf07",
+  "active": "efc3997900d75a21",
   "lastOpenFiles": [
-    "100 Redes/Transporte/UDP.md",
-    "100 Redes/Rede/IPv4.md",
-    "100 Redes/Transporte/Portas e processos.md",
-    "multiplexação.md",
-    "100 Redes/Rede/IPv6.md",
-    "100 Redes/_Index/Redes de Computadores.md",
-    "Ciência da computação - Materiais/computer-networks/livro-tanenbaum.pdf",
-    "100 Redes/Transporte",
-    "Ciência da computação - Materiais/computer-networks/resumo-redes.pdf",
-    "Ciência da computação - Materiais/computer-networks/Não confirmado 867660.crdownload",
-    "100 Redes/Modelos OSI e TCP IP.md",
-    "Ciência da computação - Materiais/software-engineering/aula-06.pdf",
-    "Ciência da computação - Materiais/software-engineering/aula-05.pdf",
-    "Ciência da computação - Materiais/software-engineering/aula-04.pdf",
-    "Ciência da computação - Materiais/software-engineering/aula-03.pdf",
-    "Ciência da computação - Materiais/software-engineering/aula-02.pdf",
-    "Ciência da computação - Materiais/software-engineering/aula-01.pdf",
-    "100 Redes/Rede/Roteamento IPv4, Gateway e NAT.md",
-    "100 Redes/Rede/ICMP.md",
-    "100 Redes/Rede/Classes de IPv4.md",
-    "100 Redes/Rede/CIDR e Mascara de Rede (IPv4).md",
-    "100 Redes/Enlace/VLANs e Protocolo IEEE 802.1q.md",
-    "100 Redes/Enlace/Transmissão de dados.md",
-    "100 Redes/Enlace/Topologias e Segmentação de redes LAN.md",
-    "100 Redes/Enlace/Padrão Ethernet.md",
-    "998 Imagens/exemplo_vetores_escalar.png",
-    "998 Imagens/exemplo_vetores_iguais.png",
-    "998 Imagens/exemplo_vetores_metodo_paralelogramo.png",
+    "100 Notas de referência/Redes/Transporte/Portas e processos.md",
+    "WRITE-MODE.md",
+    "500 Materiais/computer-networks/livro-tanenbaum.pdf",
+    "100 Notas de referência/Redes/Transporte/UDP.md",
+    "400 Notas diárias/Sem título.md",
+    "500 Materiais/computer-networks/redes-aula-13.pdf",
+    "100 Notas de referência/Redes/Rede/IPv4.md",
+    "AGENTS.md",
+    "100 Notas de referência/Redes/Rede/Roteamento IPv4, Gateway e NAT.md",
+    "500 Materiais/computer-networks/redes-aula-12.pdf",
+    "100 Notas de referência/Redes/Rede/IPv6.md",
+    "100 Notas de referência/Redes/Rede/CIDR e Mascara de Rede (IPv4).md",
+    "500 Materiais/computer-networks/redes-aula-14.pdf",
+    "500 Materiais/computer-networks/redes-resumo.pdf",
+    "Entrevista.md",
     "README.md",
-    "110 Estrutura de dados/Lineares/Listas encadeadas.md",
-    "110 Estrutura de dados/Lineares/Filas.md",
-    "110 Estrutura de dados/Lineares/Arrays.md",
-    "110 Estrutura de dados/Não lineares/Árvores.md",
-    "110 Estrutura de dados/Não lineares/Grafos.md",
-    "110 Estrutura de dados/Lineares/Pilhas.md",
-    "110 Estrutura de dados/Lineares/Matrizes.md",
-    "110 Estrutura de dados/Ponteiros.md",
-    "210 Geometria analítica e álgebra linear/_Index/Geometria analítica e álgebra linear.md",
-    "210 Geometria analítica e álgebra linear/Algebra linear/Vetores.md",
-    "998 Imagens/exemplo_cabeçalho_ipv6.png",
-    "998 Imagens/exemplo_cabecalho_icmp.png",
-    "998 Imagens/exemplo_roteamento_nat_1_to_1.png",
-    "998 Imagens/exemplo_roteamento_estático.png",
-    "998 Imagens/exemplo_ip_mascara_or.png",
+    "998 Imagens/exemplo_802.1q_switches.png",
+    "998 Imagens/exemplo_vetores_opostos.png",
     "998 Imagens/exemplo_ip_mascara_and.png",
-    "Pasted image 20260226051403.png",
+    "998 Imagens/exemplo_descending_order_queue.png",
+    "998 Imagens/exemplo_conjunto_numericos.png",
+    "998 Imagens/exemplo_cascateamento_hubs.png",
+    "998 Imagens/exemplo_cabeçalho_ipv6.png",
+    "998 Imagens/exemplo_cabecalho_ipv4.png",
+    "998 Imagens/exemplo_cabecalho_icmp.png",
+    "998 Imagens/exemplo_cabecalho_802.1q.png",
+    "100 Notas de referência/Redes/Modelos OSI e TCP IP.md",
+    "500 Materiais/analytical-geometry-and-linear-algebra/aula-01.pdf",
+    "100 Notas de referência/Estrutura de dados/Ponteiros.md",
+    "300 MOCs/Estruturas de Dados.md",
+    "300 MOCs/Redes de Computadores.md",
+    "100 Notas de referência/Estrutura de dados/_Index/Estrutura de dados.md",
+    "100 Notas de referência/Estrutura de dados/Lineares/Pilhas.md",
+    "100 Notas de referência/Estrutura de dados/Lineares/Matrizes.md",
+    "100 Notas de referência/Estrutura de dados/Lineares/Listas encadeadas.md",
+    "100 Notas de referência/Estrutura de dados/Lineares/Filas.md",
+    "100 Notas de referência/Estrutura de dados/Lineares/Arrays.md",
+    "100 Notas de referência/Estrutura de dados/Não lineares/Árvores.md",
+    "100 Notas de referência/Estrutura de dados/Não lineares/Grafos.md",
+    "100 Notas de referência/Geometria analítica e álgebra linear/_Index/Geometria analítica e álgebra linear.md",
+    "100 Notas de referência",
+    "400 Notas diárias",
+    "300 MOCs",
+    "multiplexação.md",
+    "100 Notas de referência/Redes/Transporte",
     "Sem título.canvas"
   ]
 }

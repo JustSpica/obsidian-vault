@@ -2,5 +2,6 @@
   "promptDelete": false,
   "spellcheck": false,
   "alwaysUpdateLinks": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "propertiesInDocument": "source"
 }

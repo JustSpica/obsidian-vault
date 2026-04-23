@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiNetwork",
       "LiNotebook",
       "LiFolder",
       "LiBox",
-      "LiFileText",
-      "LiImages"
+      "LiFileText"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -120,5 +120,7 @@
   "Estrutura de dados/Estrutura de dados lineares/Listas encadeadas/Listas duplamente encadeadas.md": "LiFileText",
   "Estrutura de dados/Estrutura de dados lineares/Listas encadeadas/Listas encadeadas circulares.md": "LiFileText",
   "Estrutura de dados/Estrutura de dados lineares/Filas.md": "LiFileText",
-  "Estrutura de dados/Estrutura de dados lineares/Pilhas.md": "LiFileText"
+  "Estrutura de dados/Estrutura de dados lineares/Pilhas.md": "LiFileText",
+  "300 MOCs/Redes de Computadores.md": "LiNetwork",
+  "300 MOCs/Estruturas de Dados.md": "LiBox"
 }
