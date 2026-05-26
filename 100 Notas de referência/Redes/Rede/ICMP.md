@@ -33,6 +33,7 @@ Em mensagens de erro, é comum o ICMP carregar parte do datagrama original (tipi
 Tanenbaum comenta que, incluir o cabeçalho IP original + os primeiros 8 bytes do payload costuma ser suficiente para a [[Modelos OSI e TCP IP|camada de transporte]] identificar a conexão/porta afetada.
 
 *OBS: ICMP é carregado dentro de um datagrama IP como payload (não é “fora” do cabeçalho IP).*
+
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-11.pdf|Redes - Aula 11]].

@@ -3,6 +3,7 @@
 Modelos de referência organizam uma rede em camadas. A ideia central é modularidade, cada camada oferece serviços para a de cima e usa os serviços da de baixo, reduzindo acoplamento e facilitando evolução/troca de implementações.
 
 *OBS: Modelo de referência é diferente de uma pilha de protocolos concreta. Ex.: o modelo OSI é uma referência, já a Internet usa a pilha TCP/IP (IP, TCP, UDP, etc.).*
+
 ## Modelo OSI (referência)
 
 O OSI foi pensado como um modelo geral e mais formal para padronização. Ele define **7 camadas**:
@@ -18,6 +19,7 @@ O OSI foi pensado como um modelo geral e mais formal para padronização. Ele de
 Tanenbaum destaca como grande contribuição do OSI a distinção explícita entre **serviço**, **interface** e **protocolo** (o que a camada fornece vs como se acessa vs como é implementado).
 
 Na prática, os protocolos OSI raramente são usados, mas o modelo continua útil para comparação e raciocínio.
+
 ## Modelo TCP/IP (Internet)
 
 No TCP/IP, os protocolos vieram primeiro e o modelo virou uma descrição da pilha da Internet. A forma clássica do modelo tem **4 camadas**:
@@ -30,6 +32,7 @@ No TCP/IP, os protocolos vieram primeiro e o modelo virou uma descrição da pil
 Tanenbaum separa a camada de enlace do modelo TCP/IP em **Física + Enlace**, resultando em um modelo de **5 camadas**, mas estritamente não faz parte do modelo TCP/IP original.
 
 No TCP/IP não existem camadas separadas de **Sessão** e **Apresentação**, essas funções aparecem quando necessário dentro da camada de **Aplicação**.
+
 ## Comparação
 
 - **Camadas:** OSI (7) vs TCP/IP (4, ou 5 na versão didática).
@@ -37,6 +40,7 @@ No TCP/IP não existem camadas separadas de **Sessão** e **Apresentação**, es
 - **Origem:** OSI foi definido antes dos protocolos e TCP/IP descreve protocolos já existentes.
 - **Generalidade:** OSI é mais “universal” como modelo e TCP/IP descreve muito bem a pilha da Internet, mas é pior para descrever outras pilhas.
 - **Conexões:** no TCP/IP, a camada Internet é sem conexão e na camada de transporte existem opções com e sem conexão (ex.: TCP vs UDP). O OSI contempla modos diferentes dependendo da camada.
+
 ## Encapsulamento
 
 Ao descer a pilha, cada camada adiciona informação de controle (tipicamente um cabeçalho. Em enlace é comum haver **trailer/FCS**). No destino ocorre o **desencapsulamento**:
@@ -48,6 +52,7 @@ Ao descer a pilha, cada camada adiciona informação de controle (tipicamente um
 5. **Física:** Transmite como bits no fio/ar.
 
 *OBS: Em geral, o cabeçalho de enlace é local por salto (muda a cada rede). Já IP e transporte são fim a fim (com alguns campos podendo ser atualizados no caminho, como TTL/hop limit).* 
+
 ## Referências
 
 - Baseado no PDF [[redes-resumo.pdf|Redes - Resumo]] e [[redes-aula-01.pdf|Redes - Aula 01]].

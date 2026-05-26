@@ -19,6 +19,7 @@ Exemplos comuns:
 - **443:** HTTPS
 
 O sistema operacional mantém internamente a associação entre **porta** e **processo dono da porta**. Quando chega um segmento UDP, a carga útil é entregue ao processo associado à porta de destino.
+
 ## Referências
 
 - Baseado no PDF [[redes-aula-12.pdf|Redes - Aula 12]].

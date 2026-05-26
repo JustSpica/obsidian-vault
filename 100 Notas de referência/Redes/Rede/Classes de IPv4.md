@@ -10,6 +10,7 @@ Um IP era visto como: **bits de rede** + **bits de host**:
 
 - Endereço com bits de host todos `0`: **número da rede**.
 - Endereço com bits de host todos `1`: **broadcast da rede**.
+
 ## Classes principais
 
 - **Classe A:** `0RRRRRRR HHHHHHHH HHHHHHHH HHHHHHHH` (0.0.0.0 até 127.255.255.255)
@@ -21,6 +22,7 @@ Um IP era visto como: **bits de rede** + **bits de host**:
 - **Classe D:** `1110xxx`. Reservado para [[Transmissão de dados|multicast]] e não usado na internet (224.0.0.0 até 239.255.255.255).
 - **Classe E:** `1111xxx`. Reservado sem uso. (224.0.0.0 até 255.255.255.255).
 	- `255.255.255.255` = [[Transmissão de dados|broadcast]] "global" (conceito do [[IPv4]])
+
 ## Por que classes “morreram”
 
 Resumidamente classes pararam de ser usadas porque:

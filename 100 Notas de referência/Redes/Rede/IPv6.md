@@ -20,6 +20,7 @@ No IPv6 existem três formas principais de comunicação:
 - **Anycast:** Um emissor para “um de vários” destinos que compartilham o mesmo endereço (em geral, o mais próximo/mais bem roteado).
 
 *OBS: IPv6 não tem [[Transmissão de dados|broadcast]]. Quando você precisa do “efeito broadcast”, usa multicast.*
+
 ## Cabeçalho IPv6
 
 O IPv6 tem cabeçalho fixo de **40 bytes** (10 words de 32 bits). A simplificação existe para o roteador encaminhar mais rápido. 
@@ -40,7 +41,8 @@ Opções/funcionalidades que eram “campos fixos” no IPv4 viraram **cabeçalh
 
 Tanenbaum lista extensões típicas como: *hop-by-hop options*, *destination options*, *routing*, *fragment*, *authentication* e *encrypted security payload*.
 
-*OBS: em geral, roteadores não precisam processar extensões (exceto as do tipo hop-by-hop, quando presentes).* 
+*OBS: em geral, roteadores não precisam processar extensões (exceto as do tipo hop-by-hop, quando presentes).*
+
 ## Hierarquia IPv6
 
 O espaço IPv6 foi pensado para ser mais hierárquico (ex.: `<TIPO> <ID Provedor> <ID Assinante> <ID Sub-rede> <HOST>`), facilitando sumarização e roteamento, sendo que os 8 bits iniciais sempre dirá o tipo. O endereçamento IPv6 favorece mais hierarquia/agregação, o que tende a reduzir tabelas de roteamento e simplificar encaminhamento.
@@ -64,9 +66,11 @@ Tanenbaum destaca duas consequências importantes:
 
 - Fragmentação passa a ser **fim a fim** (apenas na origem, via cabeçalho de extensão de fragmento).
 - O **MTU mínimo** aceito no IPv6 é **1280 bytes** (no IPv4 historicamente aparecia 576 bytes como referência).
+
 ## ARP e ICMPv6
 
 O papel que o ARP tinha no IPv4 é absorvido no IPv6 por mecanismos do **ICMPv6** (Neighbor Discovery). Na prática, “descobrir vizinhos” e resolver endereço de enlace acontece via mensagens ICMPv6, sem um protocolo ARP separado.
+
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-14.pdf|Redes - Aula 14]] e [[redes-aula-15.pdf|Redes - Aula 15]].

@@ -34,6 +34,7 @@ Regras:
 - Em um mesmo [[Topologias e Segmentação de redes LAN|domínio de broadcast]], todos precisam usar a mesma máscara, senão cada host calcula rede e [[Transmissão de dados|broadcast]] diferentes.
 
 *OBS: Em geral, o primeiro e o último endereço da sub-rede não são atribuídos a hosts (rede e broadcast). Por isso, uma regra prática é: hosts utilizáveis = `2^(bits_host) - 2`.*
+
 ## IPs privados
 
 Faixas reservadas para intranet:
@@ -47,6 +48,7 @@ Faixas reservadas para intranet:
 Elas são válidas para uso interno, mas não são roteadas na Internet pública (para acessar a Internet, normalmente entra [[Roteamento IPv4, Gateway e NAT|NAT]]).
 
 *OBS: “Privado” não significa “inválido”. Significa “não roteado na Internet pública”.*
+
 ## Sub-redes
 
 Dividir uma rede significa aumentar o prefixo (mais bits para rede), criando redes menores.
@@ -66,6 +68,7 @@ Uma forma rápida de achar o tamanho do bloco no octeto do corte é:
 Ex.: Um `/26`, a máscara é `255.255.255.192`, então `bloco = 256 - 192 = 64`.
 
 O início de cada sub-rede precisa ser múltiplo do tamanho do bloco no octeto onde ocorreu o corte (ex.: em `/26` (bloco 64), as redes são `X.X.X.0`, `X.X.X.64`, `X.X.X.128`, `X.X.X.192`).
+
 ## Problemas típicos de máscara errada
 
 - **Mesmo domínio, máscaras diferentes:** A está com `/24` (certa) e B com `/25`.
@@ -75,6 +78,7 @@ O início de cada sub-rede precisa ser múltiplo do tamanho do bloco no octeto o
   - B pode até enviar para A, mas a resposta de A morre pelo mesmo motivo.
 
 Em um mesmo domínio, todos precisam calcular o mesmo número de rede e broadcast.
+
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-05.pdf|Redes - Aula 05]].

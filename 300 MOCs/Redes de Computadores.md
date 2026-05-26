@@ -29,7 +29,7 @@ Essas notas focam em como um endereço IPv4 vira rede, host, broadcast e como is
 
 - [[Classes de IPv4]]: Visão histórica do endereçamento por classes.
 - [[CIDR e Mascara de Rede (IPv4)]]: Prefixo, máscara, rede, broadcast e sub-redes.
-- [[Roteamento IPv4, Gateway e NAT]]: Decisão local vs remoto, gateway, tabelas de roteamento e NAT.
+- [[Roteamento IPv4, Gateway e NAT]]: Decisão local vs remoto, gateway, tabelas de roteamento, NAT estático, NAT dinâmico/mascaramento e CGNAT.
 
 ## Camada de transporte
 
@@ -37,3 +37,4 @@ Assuntos ligados à comunicação fim a fim entre processos, usando portas e pro
 
 - [[Portas e processos]]: Auto explicativo.
 - [[UDP]]: Cabeçalho, características do serviço, casos de uso e limites de confiabilidade.
+- [[TCP]]: Conexão, confiabilidade, handshake, sequência/ACK, janela deslizante, cabeçalho e concorrência em servidores.

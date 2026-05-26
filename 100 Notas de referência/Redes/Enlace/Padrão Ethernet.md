@@ -16,7 +16,8 @@ Algumas formas de conexão do padrão 802.3:
 - **100BaseTX:** Fast Ethernet. 100Mb/s
 - **1000BaseT:** Gigabit em cobre. 1000Mb/s
 
-O ***"Base"*** indica banda-base e os sufixos (T, TX, SR, LR...) sugerem o meio/alcance (cobre, fibra...), dependendo da familia. 
+O ***"Base"*** indica banda-base e os sufixos (T, TX, SR, LR...) sugerem o meio/alcance (cobre, fibra...), dependendo da familia.
+
 ## IEEE 802.3 e Ethernet II
 
 Existem dois jeitos de identificar o protocolo carregado no quadro:
@@ -39,6 +40,7 @@ Na [[Modelos OSI e TCP IP|camada de enlace]], a placa de rede só passa para as 
 2. Se o MAC destino for igual ao MAC da placa de rede.
 3. Se o pacote for [[Transmissão de dados|multicast]] e a placa de rede estiver participando desse grupo.
 4. Se a placa estiver em modo promíscuo (A placa aceita todos os pacotes)
+
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-02.pdf|Redes - Aula 02]].

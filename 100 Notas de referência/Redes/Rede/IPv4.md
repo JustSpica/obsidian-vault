@@ -9,6 +9,7 @@ Um endereço IPv4 tem **32 bits** e normalmente é escrito em decimal pontuado (
 *OBS: A parte “rede” vs “host” não vem do número IP por [[Classes de IPv4|classe]], vem do [[CIDR e Mascara de Rede (IPv4)|CIDR]]*
 
 *OBS: Classes (A/B/C/D/E) aparecem em material antigo e ainda em alguns exercícios. Para contexto, veja [[Classes de IPv4]].*
+
 ## Datagrama e cabeçalho IPv4
 
 O IPv4 encapsula dados em um **datagrama** composto por cabeçalho + payload. O tamanho mínimo do cabeçalho é de **20 bytes** (5 words) e máximo **60 bytes** (com opções).
@@ -30,6 +31,7 @@ O IPv4 encapsula dados em um **datagrama** composto por cabeçalho + payload. O 
 - **Protocolo (8 bits):** Indica o que vem depois do IP (ex.: ICMP `0x01`, TCP `0x06`, UDP `0x11`).
 - ***Checksum* (16 bits):** Total de verificação apenas do cabeçalho. Como campos mudam no caminho, roteadores precisam recalcular.
 - **IP origem/destino:** Endereços de origem e destino.
+
 ## Fragmentação
 
 Cada enlace tem um limite de tamanho de quadro (MTU). Se um datagrama IPv4 for maior que o MTU de algum enlace no caminho, ele pode precisar ser fragmentado.
@@ -41,6 +43,7 @@ Em geral, todo fragmento (exceto o último) precisa ter tamanho de dados múltip
 O IPv4 define um mínimo de encaminhamento sem fragmentar de **68 bytes**, mas é comum também considerar que hosts devem aceitar datagramas de pelo menos **576 bytes**.
 
 *OBS: Fragmentação aumenta a chance de perda. Se um fragmento se perde, o datagrama inteiro não remonta. Na prática, é comum evitar fragmentação (ex.: ajustando MTU ou usando descoberta de MTU do caminho).* 
+
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-05.pdf|Redes - Aula 05]].
