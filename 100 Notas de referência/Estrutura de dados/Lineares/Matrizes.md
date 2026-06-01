@@ -12,7 +12,7 @@ O acesso a `mat[i][j]` funciona da seguinte forma: o compilador transforma em um
 Address(mat[i][j]) = Base_address(mat) + ((i * N) + j) * sizeof(type)
 ```
 
-Por exemplo: suponha `int mat[1][2]` onde cada `int` ocupa 4 bytes e o endereço inicial hipotético é 1000:
+Por exemplo, suponha `int mat[1][2]` onde cada `int` ocupa 4 bytes e o endereço inicial hipotético é 1000:
 
 - Endereço de `m[0][0]` = 1000 (início da linha 0)
 - Endereço de `m[0][1]` = 1000 + ((0 * 3) + 1) * 4 = 1004
@@ -56,6 +56,7 @@ A primeira "linha" da representação indica dimensões e quantidade de valores,
 Se a matriz original tivesse 12 posições (3x4) com apenas 4 preenchidas, economizei 8 zeros. 
 
 Para matrizes extremamente grandes e esparsas, a economia é substancial.
+
 ## Referências
 
 - Baseado no PDF do La Salle [[500 Materiais/data-structure/aula-01.pdf|Estrutura de dados - Aula 01]] e [[500 Materiais/data-structure/aula-02.pdf|Estrutura de dados - Aula 02]].

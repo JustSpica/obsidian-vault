@@ -24,7 +24,8 @@ Abaixo uma lista das aplicações de pilhas:
 - **Gerenciamento de funções (Call Stack):** Pilhas são usadas para "rastrear" os endereços de retorno das chamadas de funções. Por exemplo, quando o código chama uma `fn_B()` de dentro de uma `fn_A()`, o estado de `fn_A` é empilhado e só é desempilhado quando `fn_B` termina de executar.
 - **Gerenciamento de memória:** Pilhas são usadas para alocar e gerenciar a memória em algumas linguagens de programação e sistemas operacionais.
 - **Parsers e Compilers:** Pilhas são essenciais para verificar se a sintaxe de um código está correta e para converter expressões matemáticas.
-	- **Conversão infixa para pós-fixa:** A notação que o ser humano usa é infixa (`3 + 4`). Computadores "preferem" a notação pós-fixa (`3 4 +`). O algoritmo Shunting-yard usa uma pilha para fazer essa conversão de forma eficiente.
+	- **Conversão infixa para pós-fixa:** A notação que o ser humano usa é infixa (`3 + 4`). Computadores "preferem" a notação pós-fixa (`3 4 +`). O algoritmo *Shunting-yard* usa uma pilha para fazer essa conversão de forma eficiente.
+  
 ## Referências
 
 - O artigo [Introduction to Stack Data Structure](https://www.geeksforgeeks.org/dsa/introduction-to-stack-data-structure-and-algorithm-tutorials/) do geeksforgeeks tem todo o básico do conceito de pilhas. além de mostrar como é a implementação de pilhas com arrays, dequeues e listas encadeadas.
