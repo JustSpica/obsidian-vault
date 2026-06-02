@@ -1,0 +1,26 @@
+# 26-05 - Arquitetura de computadores
+
+- Comunicação de dados móvel
+	- GSM, GPRS
+	- TDMA, FDMA e CDMA
+	- Telefonia celular (células, ERB)
+- Comunicação de dados fixa
+	- ADSL
+	- Modems
+- Modulação
+	- Definição
+	- Onda portadora
+	- Amplitude (galena)
+	- Frequência,
+	- TDMA e FDMA
+	- Por variação de fase,
+	- Por orientação da onda polarizada (polarização)
+- Transmissão
+	- Wi-Fi
+	- Bluetooth
+	- Cabo
+	- Óptico
+	- PLC - Transmissão de dados por eletricidade
+	- Li-Fi
+	- Satélites (órbitas geo-estacionária, médias e baixas)
+	- Cabos submarinos
