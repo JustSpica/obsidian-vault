@@ -1,12 +1,4 @@
-# Inteligência Artificial
-
-Inteligência Artificial é a área da Ciência da Computação que busca construir sistemas capazes de executar tarefas associadas a **raciocínio**, **aprendizado**, **adaptação** e **tomada de decisão**. Ela aparece quando um computador precisa resolver problemas que, tradicionalmente, seriam descritos como comportamento inteligente.
-
-Na prática, IA não significa apenas imitar humanos. O ponto central é projetar sistemas que processem informação de forma útil para decidir, prever, recomendar, classificar ou agir em algum ambiente.
-
-*OBS: A disciplina usa IA como guarda-chuva. [[Aprendizado de Máquina]] é uma parte importante da IA, mas não é a IA inteira.*
-
-## Ideia Central
+# Conceito central
 
 A pergunta inicial da IA é como fornecer a computadores algum tipo de processamento racional. Isso pode envolver regras explícitas, modelos estatísticos, redes neurais, busca em espaços de estados ou combinações dessas abordagens.
 
@@ -26,11 +18,9 @@ A IA pode ser vista por alguns paradigmas principais:
 - **IA estatística:** Usa dados para extrair padrões e estimar regularidades.
 - **IA conexionista:** Usa estruturas inspiradas em redes de unidades conectadas, como redes neurais.
 
-A IA simbólica foi a base de muitas aplicações clássicas. Ela funciona bem quando o domínio pode ser descrito por regras formais. A IA estatística ganha força quando essas regras são difíceis de escrever manualmente, mas existem dados suficientes para aprender padrões.
+### IA Simbólica
 
-## IA Simbólica
-
-A IA simbólica tenta produzir comportamento inteligente a partir de regras explícitas. O processo geral é:
+A IA simbólica foi a base de muitas aplicações clássicas. Ela funciona bem quando o domínio pode ser descrito por regras formais. Ela tenta produzir comportamento inteligente a partir de regras explícitas. O processo geral é:
 
 1. Identificar características do domínio.
 2. Representar essas características por símbolos e regras formais.
@@ -40,17 +30,17 @@ Sistemas especialistas e o IBM Deep Blue são exemplos clássicos de sucesso des
 
 O problema é que muitos domínios são difíceis de formalizar. Reconhecer objetos, entender linguagem natural ou tomar decisões em ambientes ruidosos pode exigir regras demais, regras frágeis ou regras impossíveis de escrever de forma completa.
 
-## IA Estatística
+### IA Estatística
 
-A IA estatística troca parte da programação manual de regras por aprendizado a partir de dados. A ideia central é encontrar padrões nos exemplos observados e usar esses padrões para fazer previsões ou decisões em novos casos.
+A IA estatística ganha força quando essas regras são difíceis de escrever manualmente, mas existem dados suficientes para aprender padrões. Ela troca parte da programação manual de regras por aprendizado a partir de dados. A ideia central é encontrar padrões nos exemplos observados e usar esses padrões para fazer previsões ou decisões em novos casos.
 
 Isso muda a forma de construir sistemas. Em vez de escrever todas as regras, fornece-se experiência passada ao algoritmo, e o sistema ajusta um modelo a partir dela.
 
 Essa abordagem se tornou especialmente forte porque o volume de dados criado, capturado e consumido cresceu muito. Quando há muitos dados representativos, métodos estatísticos conseguem resolver problemas que seriam difíceis de especificar por regras explícitas.
 
-## Quando Usar Aprendizado De Máquina
+## Quando usar aprendizado De máquina
 
-Um problema é um bom candidato a [[Aprendizado de Máquina]] quando três condições aparecem juntas:
+Um problema é um bom candidato a [[Aprendizado de máquina|aprendizado de máquina]] quando três condições aparecem juntas:
 
 1. Existe um padrão a ser aprendido ou descoberto.
 2. Esse padrão não é trivial de descrever matematicamente ou manualmente.

@@ -1,18 +1,18 @@
 # Pré-processamento de Dados
 
-Pré-processamento de dados é o conjunto de transformações aplicadas antes do treinamento de um modelo para tornar os dados **consistentes**, **comparáveis** e **utilizáveis** por algoritmos de [[Aprendizado de Máquina]]. Ele serve para reduzir problemas causados por escala, ausência de valores, categorias textuais e anomalias.
+Pré-processamento de dados é o conjunto de transformações aplicadas antes do treinamento de um modelo para tornar os dados **consistentes**, **comparáveis** e **utilizáveis** por algoritmos de [[Aprendizado de máquina|aprendizado de máquina]]. Ele serve para reduzir problemas causados por escala, ausência de valores, categorias textuais e anomalias.
 
 Muitos algoritmos dependem diretamente da forma como os atributos aparecem. Por isso, a qualidade da representação pode ser tão importante quanto a escolha do algoritmo.
 
-## Distribuição Dos Atributos
+## Distribuição dos atributos
 
 A distribuição de um atributo descreve como seus valores aparecem no conjunto de dados. Alguns algoritmos são sensíveis ao intervalo e à forma dessa distribuição.
 
 Quando dois atributos têm escalas muito diferentes, um deles pode dominar o cálculo do modelo. Por exemplo, um atributo como salário pode variar em dezenas de milhares, enquanto idade varia em dezenas.
 
-Isso afeta principalmente algoritmos baseados em distância, como [[k-NN]], e algoritmos baseados em otimização, como [[Regressão Linear]] e [[Regressão Logística]].
+Isso afeta principalmente algoritmos baseados em distância, como [[k-NN]], e algoritmos baseados em otimização, como [[Regressão Linear|regressão linear]] e [[Regressão Logística|regressão logística]].
 
-## Valores Ausentes
+## Valores ausentes
 
 Valores ausentes aparecem quando uma instância não possui valor para um ou mais atributos. Isso pode acontecer por erro de coleta, falha de integração, campo opcional ou impossibilidade de medição.
 
@@ -24,9 +24,9 @@ As estratégias mais comuns são:
 
 *OBS: Imputar pela média pode ser simples, mas também pode esconder padrões importantes. A escolha depende do domínio e do motivo da ausência.*
 
-## Atributos Textuais E Categóricos
+## Atributos textuais e categóricos
 
-Algoritmos de aprendizado de máquina trabalham com números. Por isso, categorias textuais precisam ser codificadas.
+Algoritmos de aprendizado de máquina trabalham com representações numéricas. Mesmo quando os dados originais são textuais, categóricos ou visuais, é necessário transformá-los em valores que o algoritmo consiga manipular. Por isso, categorias textuais e afins precisam ser codificadas.
 
 Antes da codificação, é necessário distinguir dois tipos de categoria:
 
@@ -35,9 +35,9 @@ Antes da codificação, é necessário distinguir dois tipos de categoria:
 
 Categorias nominais não devem receber números que sugiram hierarquia artificial. Categorias ordinais podem preservar ordem, desde que a escala faça sentido para o problema.
 
-## Escala Dos Atributos
+## Escala dos atributos
 
-Escalas muito diferentes podem enviesar modelos. Duas transformações comuns são:
+Escalas muito diferentes entre atributos podem enviesar modelos. Duas transformações comuns são:
 
 - **Normalização:** Ajusta valores para um intervalo, geralmente entre `0` e `1`.
 - **Padronização:** Centraliza os valores pela média e ajusta pela variância ou desvio padrão.
