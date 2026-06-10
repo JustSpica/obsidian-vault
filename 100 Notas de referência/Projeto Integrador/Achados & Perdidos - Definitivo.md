@@ -169,3 +169,8 @@ Tendo em vista os apontamentos acima, a demanda geral identificada é melhorar o
 **Quem?:** Grupo de estudantes, junto a coordenadoria do CASA.
 **Quando?:** Durante o período de implementação do projeto.
 **Como?:** Implementação de um campo "Achados e perdidos", no portal do CASA, para abertura de um ticket.
+
+### Fluxo definido até o momento
+
+![[fluxo_achados_perdidos.png]]
+
