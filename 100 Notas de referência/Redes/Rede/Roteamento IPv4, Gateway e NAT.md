@@ -79,15 +79,19 @@ No caso **NAT estático** (RFC 1631), a tradução é uma associação fixa:
 
 **Exemplo de uma rede com NAT estático:** ![[exemplo_roteamento_nat_1_to_1.png]]
 
-**Tabela NAT 1:1**
+**Tabela NAT 1:1:**
 
-| **IPs públicos** | **IPs privados** | **IPs públicos** | **IPs privados** |
-| ---------------- | ---------------- | ---------------- | ---------------- |
-| `143.54.11.64`   | `10.0.0.3`       | `143.54.11.68`   | `10.0.1.2`       |
-| `143.54.11.65`   | `10.0.0.4`       | `143.54.11.69`   | `10.0.1.3`       |
-| `143.54.11.66`   | `10.0.0.5`       | `143.54.11.70`   | `10.0.1.4`       |
-| `143.54.11.67`   | `10.0.0.6`       | `143.54.11.71`   | `10.0.1.5`       |
-|                  |                  | `143.54.11.72`   | `10.0.1.6`       |
+| **IPs públicos** | **IPs privados** |
+| ---------------- | ---------------- |
+| `143.54.11.64`   | `10.0.0.3`       |
+| `143.54.11.65`   | `10.0.0.4`       |
+| `143.54.11.66`   | `10.0.0.5`       |
+| `143.54.11.67`   | `10.0.0.6`       |
+| `143.54.11.68`   | `10.0.1.2`       |
+| `143.54.11.69`   | `10.0.1.3`       |
+| `143.54.11.70`   | `10.0.1.4`       |
+| `143.54.11.71`   | `10.0.1.5`       |
+| `143.54.11.72`   | `10.0.1.6`       |
 
 Como o NAT altera o cabeçalho IPv4, ele precisa recalcular o checksum do cabeçalho.
 
@@ -139,4 +143,4 @@ Tanenbaum trata NAT como uma solução prática para a escassez de IPv4, mas tam
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-07.pdf|Redes - Aula 07]] e [[redes-aula-13.pdf|Redes - Aula 13]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

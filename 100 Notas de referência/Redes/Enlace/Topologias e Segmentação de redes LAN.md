@@ -53,4 +53,4 @@ Problema: se não for configurado corretamente, máquinas de redes diferentes po
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-02.pdf|Redes - Aula 02]] e [[redes-aula-03.pdf|Redes - Aula 03]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

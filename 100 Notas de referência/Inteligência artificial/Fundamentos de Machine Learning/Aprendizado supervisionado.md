@@ -10,9 +10,7 @@ $$f(x) \approx y$$
 
 ## Treinamento
 
-Durante o treinamento, o algoritmo recebe instâncias com as respostas esperadas. Com isso, ajusta sua hipótese para reduzir erros de predição.
-
-O treino pode significar coisas diferentes dependendo do algoritmo
+Durante o treinamento, o algoritmo recebe instâncias com as respostas esperadas. Com isso, ajusta sua hipótese para reduzir erros de predição. O treino pode significar coisas diferentes dependendo do algoritmo.
 
 ## Teste
 

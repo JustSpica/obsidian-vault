@@ -48,7 +48,7 @@ A escolha da distância depende do tipo de dado e da representação usada.
 
 O valor de `k` controla o nível de suavização da predição.
 
-- **k pequeno:** O modelo fica mais sensível a ruídos e [[Generalização, Viés, Underfitting e Overfitting|outliers]].
+- **k pequeno:** O modelo fica mais sensível a ruídos e [[Pré-processamento de dados|outliers]].
 - **k grande:** O modelo fica mais estável, mas pode apagar padrões locais.
 
 O conjunto de teste ou validação é importante para escolher `k` de forma mais cuidadosa.

@@ -36,4 +36,4 @@ Isso levou ao uso de [[CIDR e Mascara de Rede (IPv4)|CIDR]], que permite prefixo
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-05.pdf|Redes - Aula 05]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

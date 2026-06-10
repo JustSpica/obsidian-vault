@@ -14,10 +14,20 @@ Com um IP e uma máscara, dois cálculos básicos resolvem quase tudo:
 **Exemplo de operações:**
 
 Qual rede pertence o IP `192.168.10.50/24`, ou seja, os **24 bits** iniciais designam a rede:
-![[exemplo_ip_mascara_and.png]]
 
-E para encontrar o broadcast é só fazer a operação OR pela máscara invertida:
-![[exemplo_ip_mascara_or.png]]
+|         | **Binário**                               | **Decimal**      |
+| ------- | ----------------------------------------- | ---------------- |
+| IP      | `11000000 10101000 00001010 00110010`     | 192.168.10.50    |
+| Máscara | `11111111 11111111 11111111 00000000`     | 255.255.255.0    |
+| **AND** | **`11000000 10101000 00001010 00000000`** | **192.168.10.0** |
+
+E para encontrar o broadcast é só fazer a operação **OR** pela máscara invertida:
+
+|         | **Binário**                               | **Decimal**        |
+| ------- | ----------------------------------------- | ------------------ |
+| IP      | `11000000 10101000 00001010 00110010`     | 192.168.10.50      |
+| Máscara | `00000000 00000000 00000000 11111111`     | 0.0.0.255          |
+| **OR**  | **`11000000 10101000 00001010 11111111`** | **192.168.10.255** |
 
 Alguns problemas típicos de usar máscara errada para as operações são:
 
@@ -82,4 +92,4 @@ Em um mesmo domínio, todos precisam calcular o mesmo número de rede e broadcas
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-05.pdf|Redes - Aula 05]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]]
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]]

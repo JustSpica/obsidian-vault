@@ -143,4 +143,4 @@ Na prática, servidores reais costumam usar variações de processos, threads, p
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-13.pdf|Redes - Aula 13]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

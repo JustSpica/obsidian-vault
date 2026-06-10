@@ -23,4 +23,4 @@ O sistema operacional mantém internamente a associação entre **porta** e **pr
 ## Referências
 
 - Baseado no PDF [[redes-aula-12.pdf|Redes - Aula 12]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

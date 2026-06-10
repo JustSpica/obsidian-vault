@@ -29,12 +29,12 @@ Não há tamanho variável no cabeçalho base e não existe checksum no cabeçal
 
 **Exemplo cabeçalho IPv6:** ![[exemplo_cabeçalho_ipv6.png]]
 
-- **Versão:** `0110 = 6`.
-- **Prioridade:** Similar ao ToS/DS no [[IPv4]] (priorização/QoS).
-- **Rótulo de fluxo:** Identifica um fluxo que pode receber tratamento especial (ex.: áudio/vídeo em tempo real).
-- **Comprimento dos dados:** Tamanho do payload (exclui os 40 bytes do cabeçalho base).
-- **Próximo cabeçalho:** Indica o próximo cabeçalho (um cabeçalho de extensão ou um protocolo de transporte como TCP/UDP).
-- **Limite de saltos:** Equivalente ao TTL (decrementado a cada roteador).
+- **Versão (4 bits):** `0110 = 6`.
+- **Prioridade (4 bits):** Similar ao ToS/DS no [[IPv4]] (priorização/QoS).
+- **Rótulo de fluxo (24 bits):** Identifica um fluxo que pode receber tratamento especial (ex.: áudio/vídeo em tempo real).
+- **Comprimento dos dados (16 bits):** Tamanho do payload (exclui os 40 bytes do cabeçalho base).
+- **Próximo cabeçalho (8 bits):** Indica o próximo cabeçalho (um cabeçalho de extensão ou um protocolo de transporte como TCP/UDP).
+- **Limite de saltos (8 bits):** Equivalente ao TTL (decrementado a cada roteador).
 - **IP origem/destino:** 128 bits cada.
 
 Opções/funcionalidades que eram “campos fixos” no IPv4 viraram **cabeçalhos de extensão** no IPv6. A ideia é, só paga o custo quando precisa.
@@ -74,4 +74,4 @@ O papel que o ARP tinha no IPv4 é absorvido no IPv6 por mecanismos do **ICMPv6*
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-14.pdf|Redes - Aula 14]] e [[redes-aula-15.pdf|Redes - Aula 15]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

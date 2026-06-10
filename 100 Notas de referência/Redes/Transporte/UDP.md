@@ -12,6 +12,8 @@ Tanenbaum resume bem a ideia: o UDP é basicamente o IP com um cabeçalho pequen
 
 O cabeçalho UDP é bem pequeno: **8 bytes**.
 
+**Exemplo cabeçalho UDP:** ![[exemplo_cabecalho_udp.png]]
+
 - **Porta de origem (16 bits)**
 - **Porta de destino (16 bits)**
 - **Tamanho (16 bits):** tamanho total do segmento UDP (cabeçalho + dados).
@@ -113,4 +115,4 @@ O exemplo clássico é o **TFTP**, que usa UDP e trabalha com troca para portas 
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-12.pdf|Redes - Aula 12]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].

@@ -56,5 +56,5 @@ Ao descer a pilha, cada camada adiciona informação de controle (tipicamente um
 ## Referências
 
 - Baseado no PDF [[redes-resumo.pdf|Redes - Resumo]] e [[redes-aula-01.pdf|Redes - Aula 01]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
 - O vídeo [Como sua Internet Funciona | Introdução a Redes Parte 3](https://youtu.be/gcv5hXyTcIo?t=103%5D) da série de redes do canal Fábio Akita, a partir do momento **01:43** explica o comparativo entre o modelo OSI e TCP/IP.

@@ -80,4 +80,4 @@ Tanenbaum destaca que, para não voltar ao problema de configuração manual de 
 ## Referências
 
 - Baseado no PDF do La salle [[redes-aula-03.pdf|Redes - Aula 03]] e [[redes-aula-04.pdf|Redes - Aula 04]].
-- Baseado no livro [[livro-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
+- Baseado no livro [[computer-networks-tanenbaum.pdf|Redes de computadores de Tanenbaum]].
