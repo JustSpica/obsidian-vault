@@ -10,7 +10,7 @@ Existem três modos:
 
 1. **Unicast:** Transmite apenas para um único dispositivo. Sempre que o byte mais significativo for par é unicast (ex.: `02:05:04:03:2E:4A`).
 2. **Multicast:** Transmite para um grupo específico de dispositivos. Sempre que o byte mais significativo for impar é multicast (ex.: `01:00:5E:XX:XX:XX`).
-3. **Broadcast:** Transmite para todos os dispositivos na rede local, sendo limitado ao [[Topologias e Segmentação de redes LAN|domínio de broadcast]] (ex: `FF:FF:FF:FF:FF:FF`).
+3. **Broadcast:** Transmite para todos os dispositivos na rede local, sendo limitado ao [[Topologias e Segmentação de redes LAN#Domínio de broadcast vs Domínio de colisão|domínio de broadcast]] (ex: `FF:FF:FF:FF:FF:FF`).
 
 ## Direção de fluxo de dados
 

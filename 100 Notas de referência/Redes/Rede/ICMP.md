@@ -28,7 +28,7 @@ ICMP não “conserta” o IP, ele apenas informa.
 
 O restante depende do tipo/mensagem.
 
-Em mensagens de erro, é comum o ICMP carregar parte do datagrama original (tipicamente o [[IPv4|cabeçalho IP + os primeiros bytes do payload]]) para o emissor conseguir identificar qual comunicação gerou o erro.
+Em mensagens de erro, é comum o ICMP carregar parte do datagrama original (tipicamente o [[IPv4#Datagrama e cabeçalho IPv4|cabeçalho IP + os primeiros bytes do payload]]) para o emissor conseguir identificar qual comunicação gerou o erro.
 
 Tanenbaum comenta que, incluir o cabeçalho IP original + os primeiros 8 bytes do payload costuma ser suficiente para a [[Modelos OSI e TCP IP|camada de transporte]] identificar a conexão/porta afetada.
 

@@ -16,7 +16,7 @@ O TCP é usado quando a aplicação precisa de uma conversa mais controlada do q
 - **Entrega confiável:** Dados perdidos podem ser retransmitidos.
 - **Ordem:** A aplicação recebe os bytes na ordem correta.
 - **Fluxo de bytes:** TCP não preserva fronteiras de mensagens.
-- **[[Transmissão de dados|Full-Duplex]]:** Os dois lados podem enviar e receber ao mesmo tempo.
+- **[[Transmissão de dados#Direção de fluxo de dados|Full-Duplex]]:** Os dois lados podem enviar e receber ao mesmo tempo.
 - **Ponto a ponto:** uma conexão TCP liga exatamente dois pontos finais.
 
 Uma conexão TCP é identificada pelo par de soquetes das duas pontas, isto é, pela combinação: `IP origem + porta origem + IP destino + porta destino`

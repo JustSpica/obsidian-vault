@@ -41,7 +41,7 @@ Regras:
 
 - Em uma rede, o endereço com bits de host todos 0 é o número da rede.
 - Em uma rede, o endereço com bits de host todos 1 é o broadcast.
-- Em um mesmo [[Topologias e Segmentação de redes LAN|domínio de broadcast]], todos precisam usar a mesma máscara, senão cada host calcula rede e [[Transmissão de dados|broadcast]] diferentes.
+- Em um mesmo [[Topologias e Segmentação de redes LAN#Domínio de broadcast vs Domínio de colisão|domínio de broadcast]], todos precisam usar a mesma máscara, senão cada host calcula rede e [[Transmissão de dados#Escopo do fluxo de dados|broadcast]] diferentes.
 
 *OBS: Em geral, o primeiro e o último endereço da sub-rede não são atribuídos a hosts (rede e broadcast). Por isso, uma regra prática é: hosts utilizáveis = `2^(bits_host) - 2`.*
 
@@ -55,7 +55,7 @@ Faixas reservadas para intranet:
 - `172.16.0.0/12`
 - `192.168.0.0/16`
 
-Elas são válidas para uso interno, mas não são roteadas na Internet pública (para acessar a Internet, normalmente entra [[Roteamento IPv4, Gateway e NAT|NAT]]).
+Elas são válidas para uso interno, mas não são roteadas na Internet pública (para acessar a Internet, normalmente entra [[Roteamento IPv4, Gateway e NAT#NAT (Network Address Translation)|NAT]]).
 
 *OBS: “Privado” não significa “inválido”. Significa “não roteado na Internet pública”.*
 

@@ -19,7 +19,7 @@ Topologia descreve como será a estrutura física e lógica da rede local, inclu
 
 ## Domínio de broadcast vs Domínio de colisão
 
-- **Domínio de broadcast:** É um grupo de dispositivos que recebem quadros [[Transmissão de dados|broadcast]] (destinados a `FF:FF:FF:FF:FF:FF`).
+- **Domínio de broadcast:** É um grupo de dispositivos que recebem quadros [[Transmissão de dados#Escopo do fluxo de dados|broadcast]] (destinados a `FF:FF:FF:FF:FF:FF`).
 - **Domínio de colisão:** Grupo de dispositivos que competem pelo mesmo meio de transmissão. Quando dois ou mais dispositivos transmitem um quadro simultaneamente, ocorre uma colisão.
 
 ### CSMA/CD

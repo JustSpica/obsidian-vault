@@ -1,6 +1,6 @@
 # IPv6
 
-O IPv6 (Internet Protocol v6) é a evolução do [[IPv4]] na [[Modelos OSI e TCP IP|camada de rede]] da pilha TCP/IP. Ele mantém o modelo **sem conexão** e **best-effort**, mas tenta corrigir gargalos do IPv4, como espaço de endereçamento, eficiência de roteamento e processamento em roteadores.
+O IPv6 (Internet Protocol v6) é a evolução do [[IPv4]] na [[Modelos OSI e TCP IP|camada de rede da pilha TCP/IP]]. Ele mantém o modelo **sem conexão** e ***best-effort***, mas tenta corrigir gargalos do IPv4, como espaço de endereçamento, eficiência de roteamento e processamento em roteadores.
 
 Em redes [[Padrão Ethernet|Ethernet]], o IPv6 costuma aparecer no campo EtherType como `0x86DD`.
 
@@ -15,11 +15,11 @@ Existem alternativas para minimizar a representação do hexadecimal, como:
 
 No IPv6 existem três formas principais de comunicação:
 
-- **[[Transmissão de dados|Unicast]]:** Um emissor para um único destino.
-- **[[Transmissão de dados|Multicast]]:** Um emissor para um grupo de dispositivos.
+- **[[Transmissão de dados#Escopo do fluxo de dados|Unicast]]:** Um emissor para um único destino.
+- **[[Transmissão de dados#Escopo do fluxo de dados|Multicast]]:** Um emissor para um grupo de dispositivos.
 - **Anycast:** Um emissor para “um de vários” destinos que compartilham o mesmo endereço (em geral, o mais próximo/mais bem roteado).
 
-*OBS: IPv6 não tem [[Transmissão de dados|broadcast]]. Quando você precisa do “efeito broadcast”, usa multicast.*
+*OBS: IPv6 não tem [[Transmissão de dados#Escopo do fluxo de dados|broadcast]]. Quando você precisa do “efeito broadcast”, usa multicast.*
 
 ## Cabeçalho IPv6
 

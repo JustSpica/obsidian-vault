@@ -1,6 +1,6 @@
 # Ethernet (IEEE 802.x)
 
-O padrão Ethernet (IEEE 802.x) é uma família de padrões que define as [[Modelos OSI e TCP IP|camadas física e enlance]] da pilha [[Modelos OSI e TCP IP|TCP/IP]], para redes locais.
+O padrão Ethernet (IEEE 802.x) é uma família de padrões que define as [[Modelos OSI e TCP IP|camadas física e enlance da pilha TCP/IP]], para redes locais.
 
 Alguns protocólos mais conhecidos da família IEEE 802.x:
 
@@ -37,9 +37,9 @@ Ethernet II é mais comum em LAN corporativa/Internet, mas o termo "802.3" conti
 
 Na [[Modelos OSI e TCP IP|camada de enlace]], a placa de rede só passa para as camadas superiores se:
 
-1. Receber um pacote [[Transmissão de dados|broadcast]].
+1. Receber um pacote [[Transmissão de dados#Escopo do fluxo de dados|broadcast]].
 2. Se o MAC destino for igual ao MAC da placa de rede.
-3. Se o pacote for [[Transmissão de dados|multicast]] e a placa de rede estiver participando desse grupo.
+3. Se o pacote for [[Transmissão de dados#Escopo do fluxo de dados|multicast]] e a placa de rede estiver participando desse grupo.
 4. Se a placa estiver em modo promíscuo (A placa aceita todos os pacotes)
 
 ## Referências

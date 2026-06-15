@@ -64,13 +64,13 @@ Esse exemplo é o motivo do TTL existir. Ele transforma “loop infinito” em �
 
 ## Interfaces vs placa de rede
 
-Quem recebe IP é a interface. Em uso comum, “1 placa = 1 interface”, mas com [[VLANs e Protocolo IEEE 802.1q|VLAN (802.1q)]] é possível ter uma placa com **várias interfaces lógicas**.
+Quem recebe IP é a interface. Em uso comum, “1 placa = 1 interface”, mas com [[VLANs e Protocolo IEEE 802.1q#Protocolo IEEE 802.1q|VLAN (802.1q)]] é possível ter uma placa com **várias interfaces lógicas**.
 
 Isso aparece muito em roteadores. Uma única NIC (ex.: `eth0`) pode carregar várias VLANs e virar várias interfaces lógicas (ex.: `eth0.10`, `eth0.20`), cada uma com seu `IP/prefixo`.
 
 ## NAT (Network Address Translation)
 
-NAT traduz endereços entre uma rede privada e a Internet. Ele aparece como solução prática quando você usa [[CIDR e Mascara de Rede (IPv4)|IPs privados]] internamente e precisa sair para a Internet com IP(s) público(s).
+NAT traduz endereços entre uma rede privada e a Internet. Ele aparece como solução prática quando você usa [[CIDR e Mascara de Rede (IPv4)#IPs privados|IPs privados]] internamente e precisa sair para a Internet com IP(s) público(s).
 
 No caso **NAT estático** (RFC 1631), a tradução é uma associação fixa:
 
@@ -97,11 +97,11 @@ Como o NAT altera o cabeçalho IPv4, ele precisa recalcular o checksum do cabeç
 
 *OBS: Em implementações reais, NAT geralmente precisa atualizar também checksums de TCP/UDP, pois esses protocolos usam um pseudo-cabeçalho que inclui endereços IP.*
 
-## NAT dinâmico e mascaramento
+### NAT dinâmico e mascaramento
 
 No **NAT dinâmico** com mascaramento, a tradução não é uma associação fixa `1:1`. A ideia é permitir que vários hosts privados saiam para a Internet usando **um único IP público**, ou um conjunto pequeno de IPs públicos.
 
-Esse caso é chamado de **NAT 1:N** e normalmente usa **PAT** (*Port Address Translation*), porque a tradução passa a envolver também as portas de [[TCP]] ou [[UDP]].
+Esse caso é chamado de **NAT 1:N** e normalmente usa **PAT** (*Port Address Translation*), porque a tradução passa a envolver também as [[Portas e processos|portas]] de [[TCP]] ou [[UDP]].
 
 Na prática, o roteador NAT mantém uma tabela temporária de traduções, como no exemplo abaixo:
 
@@ -123,7 +123,7 @@ Como o NAT altera IP e porta, ele precisa recalcular checksums. No caso de TCP e
 
 *OBS: Mascaramento atrapalha uso como servidor. Se uma conexão vem de fora sem existir mapeamento prévio na tabela NAT, o roteador não sabe automaticamente para qual máquina interna entregar. Para isso, normalmente precisa de redirecionamento de porta, regra estática ou outro mecanismo.*
 
-## CGNAT
+### CGNAT
 
 O **CGNAT** (*Carrier-Grade NAT*) é o NAT dinâmico feito pelo provedor. Em vez de só a rede de casa ou da empresa compartilhar um IP público internamente, vários clientes do provedor também compartilham IPs públicos na rede do próprio provedor, criando um **duplo NAT**.
 

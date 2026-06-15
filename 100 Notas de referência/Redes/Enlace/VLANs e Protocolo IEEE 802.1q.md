@@ -2,9 +2,9 @@
 
 ## VLANs
 
-VLAN (*Virtual LAN*) é uma forma de segmentar uma LAN na [[Modelos OSI e TCP IP|camada de enlace]], criando dois ou mais [[Topologias e Segmentação de redes LAN|domínios de broadcast]] dentro de um, ou mais [[Topologias e Segmentação de redes LAN|switches]] gerenciáveis.
+VLAN (*Virtual LAN*) é uma forma de segmentar uma LAN na [[Modelos OSI e TCP IP|camada de enlace]], criando dois ou mais [[Topologias e Segmentação de redes LAN#Domínio de broadcast vs Domínio de colisão|domínios de broadcast]] dentro de um, ou mais [[Topologias e Segmentação de redes LAN#HUBs, Bridges e Switches|switches]] gerenciáveis.
 
-Cada VLAN se comporta como uma [[Topologias e Segmentação de redes LAN|bridge]] separada e tem sua própria tabela de comutação.
+Cada VLAN se comporta como uma [[Topologias e Segmentação de redes LAN#HUBs, Bridges e Switches|bridge]] separada e tem sua própria tabela de comutação.
 
 VLANs existe por um motivo principal: **Evitar desperdício de portas**.
 
@@ -19,7 +19,7 @@ VLANs são identificadas por números e não existe ligação entre uma VLAN e o
 
 **Exemplo de como uma VLAN funcionária em comparação com bridges:**![[998 Imagens/exemplo_bridges_vlan.png]]
 
-Para VLANs funcionarem, o [[Topologias e Segmentação de redes LAN|switch]] precisa de tabelas de configuração dizendo quais VLANs existem em cada porta. Quando um quadro chega na VLAN 1, ele deve ser encaminhado somente para portas marcadas com aquela VLAN, isso vale para [[Transmissão de dados|unicast, multicast e broadcast]].
+Para VLANs funcionarem, o [[Topologias e Segmentação de redes LAN#HUBs, Bridges e Switches|switch]] precisa de tabelas de configuração dizendo quais VLANs existem em cada porta. Quando um quadro chega na VLAN 1, ele deve ser encaminhado somente para portas marcadas com aquela VLAN, isso vale para [[Transmissão de dados#Escopo do fluxo de dados|unicast, multicast e broadcast]].
 
 De acordo com Tanenbaum, o switch descobre de qual VLAN é o quadro a partir de 3 métodos mais comuns:
 
@@ -51,7 +51,7 @@ O antigo campo Type/Length do quadro Ethernet continua existindo, mas após a in
 
 *OBS: O 802.1Q aumenta o tamanho máximo do quadro Ethernet de 1522 para 1526 bytes (por causa dos 4 bytes extras da tag).*
 
-Além disso, o protocolo permite interligar [[Topologias e Segmentação de redes LAN|switches]] (ou um [[Topologias e Segmentação de redes LAN|switch]] e um roteador) transportando várias VLANs pelo mesmo meio físico, sem precisar de um cabo por VLAN.
+Além disso, o protocolo permite interligar [[Topologias e Segmentação de redes LAN#HUBs, Bridges e Switches|switches]] (ou um switch e um roteador) transportando várias VLANs pelo mesmo meio físico, sem precisar de um cabo por VLAN.
 
 **Exemplo de 802.1q por um único meio físico:**![[998 Imagens/exemplo_802.1q_switches.png]]
 
@@ -60,7 +60,7 @@ Além disso, o protocolo permite interligar [[Topologias e Segmentação de rede
 Na prática, as portas de um switch ficam em um destes papéis:
 
 - **Porta access:** Associada a uma única VLAN. Entrega/recebe quadros sem a tag para hosts finais.
-- **Porta trunk (802.1q):** Transporta múltiplas VLANs no mesmo meio físico (tipicamente entre [[Topologias e Segmentação de redes LAN|switches]]). Os quadros trafegam marcados.
+- **Porta trunk (802.1q):** Transporta múltiplas VLANs no mesmo meio físico (tipicamente entre switches). Os quadros trafegam marcados.
 
 Tanenbaum diz que: *"As tags só precisam existir onde switches/bridges precisam delas"*.
 
@@ -70,12 +70,12 @@ Por isso é comum o switch inserir a tag ao encaminhar para um trunk e remover a
 
 ### Encaminhamento e tabelas por VLAN
 
-Com tagging, o [[Topologias e Segmentação de redes LAN|switch]] consegue tratar cada VLAN como uma bridge lógica separada:
+Com tagging, o switch consegue tratar cada VLAN como uma bridge lógica separada:
 
 - Mantém uma tabela(s) de comutação por VLAN.
 - Quando um quadro chega, o switch identifica a VLAN (pela porta access ou pela tag 802.1q) e encaminha apenas para as portas daquela VLAN.
 
-Tanenbaum destaca que, para não voltar ao problema de configuração manual de [[Topologias e Segmentação de redes LAN|bridges]], o 802.1q descreve como construir essas tabelas dinamicamente, reaproveitando conceitos do 802.1D (Perlman / Spanning Tree).
+Tanenbaum destaca que, para não voltar ao problema de configuração manual de [[Topologias e Segmentação de redes LAN#HUBs, Bridges e Switches|bridges]], o 802.1q descreve como construir essas tabelas dinamicamente, reaproveitando conceitos do 802.1D (Perlman / Spanning Tree).
 
 ## Referências
 
