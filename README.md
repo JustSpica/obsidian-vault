@@ -1,48 +1,77 @@
-# CS Vault
+# Computer Science Obsidian Vault
 
-<p align="center">My Obsidian vault with Computer Science notes, organized by subject and written in a review-oriented format.</p>
+Vault pessoal de estudos em Ciência da Computação, mantido no Obsidian e versionado com Git.
 
-## About
+O objetivo é reunir notas de referência, mapas de conteúdo, materiais de apoio e registros de estudo em uma estrutura navegável e fácil de revisar.
 
-This repository gathers my study notes in Obsidian. The material is organized to work both as a quick reference and as a content map across related topics.
+O conteúdo está escrito majoritariamente em português e usa links internos do Obsidian para conectar assuntos relacionados.
 
-In addition to the notes, the repository includes an image folder used for examples and diagrams embedded throughout the content.
+## Visão Geral
 
-## Vault Structure
+Este repositório funciona como uma base de conhecimento pessoal. Ele não tenta ser uma apostila linear única, a ideia é separar os assuntos em notas menores, conectadas por MOCs (*Maps of Content*) e por wikilinks.
+
+O vault foi organizado para atender três usos principais:
+
+- Revisão rápida antes de aulas, provas ou implementações.
+- Consulta pontual de conceitos, fórmulas, protocolos e estruturas.
+- Evolução incremental das notas conforme novos materiais são estudados.
+
+## Estrutura do Vault
 
 ```text
 .
-├── 100 Redes/
-│   ├── _Index/                       # Subject index note
-│   ├── Enlace/                       # Ethernet, VLANs, transmission, and LANs
-│   ├── Rede/                         # IPv4, IPv6, ICMP, CIDR, NAT, and routing
-│   └── Modelos OSI e TCP IP.md
-├── 110 Estrutura de dados/
-│   ├── _Index/                       # Subject index note
-│   ├── Lineares/                     # Arrays, lists, queues, stacks, and matrices
-│   ├── Não lineares/                 # Trees and graphs
-│   └── Ponteiros.md
-├── 210 Geometria analítica e álgebra linear/
-│   ├── _Index/                       # Subject index note
-│   └── Algebra linear/               # Sets, vectors, matrices, and systems
-├── 998 Imagens/                      # Images and diagrams used in the notes
-└── .obsidian/                        # Local vault settings
+├── 100 Notas de referência/       # Notas atômicas e notas conceituais por assunto
+├── 200 Notas diárias/             # Registros cronológicos de estudo feitos durante uma atividade ou aula
+├── 300 MOCs/                      # Mapas de conteúdo e pontos de entrada por área
+├── 500 Materiais/                 # PDFs, livros e slides usados como fonte (ignorado pelo Git)
+├── 998 Imagens/                   # Imagens, diagramas e exemplos usados nas notas
+├── .obsidian/                     # Configuração local do Obsidian (ignorada pelo Git)
+├── .gitignore
+└── README.md
 ```
 
-## How the Content Is Organized
+## Organização do Conteúdo
 
-- Each area has an `_Index/` note that acts as its entry point.
-- The notes are connected through Obsidian wikilinks, making topic-based navigation easier.
-- The content emphasizes short explanations, examples, and topic-by-topic breakdowns.
-- A large portion of the notes ends with a references section for books, PDFs, or videos.
+### `100 Notas de referência/`
 
-## Repository Conventions
+Contém as notas principais do vault. Essas notas são agrupadas por disciplina ou área de estudo.
 
-- Folder names use numeric prefixes to keep the areas ordered inside the vault.
-- The content is primarily in **Portuguese**.
-- The `998 Imagens/` folder centralizes the files used in visual examples.
-- Supporting folders, such as external materials that are private, are kept out of version control through `.gitignore`.
+**Áreas presentes atualmente:**
 
-## Purpose
+| Área                                   | Descrição                                                                                                                                                            |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Redes`                                | Modelos OSI e TCP/IP, camada de enlace (Ethernet, VLANs, topologias), camada de rede (IPv4, IPv6, ICMP, roteamento, NAT) e camada de transporte (UDP, TCP e portas). |
+| `Estrutura de dados`                   | Ponteiros, arrays, matrizes, listas encadeadas, pilhas, filas e árvores (BST e red-black).                                                                           |
+| `Geometria analítica e álgebra linear` | Teoria dos conjuntos, vetores, matrizes e sistemas lineares                                                                                                          |
+| `Inteligência artificial`              | Fundamentos e pré-processamento de dados, fundamentos de ML e algoritmos como k-NN e árvores de decisão.                                                             |
 
-This vault was designed as a personal repository for studying, review, and quick reference throughout my degree. The main idea is to keep the notes lean, navigable, and reusable instead of concentrating everything in long, isolated files that I would probably forget in a few weeks. It was the study method that personally worked for me and has been very productive.
+### `300 MOCs/`
+
+Contém os mapas de conteúdo. Eles são os melhores pontos de entrada para navegar pelo vault, porque organizam as notas por trilha conceitual em vez de apenas por pasta.
+
+### `998 Imagens/`
+
+Centraliza imagens usadas nas notas, como diagramas de protocolos, exemplos de cabeçalhos, topologias, estruturas e ilustrações auxiliares.
+
+As imagens são referenciadas nas notas usando o formato do Obsidian:
+
+```md
+![[nome-da-imagem.png]]
+```
+
+**OBS:** Os diagramas e as imagens de exemplo foram elaborados com foco em oferecer melhor contraste em temas claros. Por isso, a visualização pode ficar prejudicada em temas escuros.
+
+## Convenções
+
+- As notas são escritas principalmente em português.
+- Os links internos usam wikilinks do Obsidian, como `[[TCP]]` ou `[[Roteamento IPv4, Gateway e NAT]]`.
+- Os MOCs funcionam como índices vivos, atualizados conforme novas notas são adicionadas.
+- Seções `Referências` indicam PDFs, livros, vídeos ou materiais usados como base.
+- A pasta `998 Imagens/` concentra imagens para evitar arquivos espalhados entre as notas.
+- A numeração das pastas ajuda a manter a ordem visual dentro do Obsidian.
+
+## Escopo
+
+Este é um vault de estudo pessoal que uso para organizar e documentar a minha própria evolução, não uma documentação oficial de disciplina, curso ou biblioteca. Algumas notas são resumos, outras são referências mais completas, e o conteúdo pode mudar conforme os meus estudos avançam.
+
+A prioridade é manter o material útil para revisão e consulta, com estrutura suficiente para crescer sem virar um conjunto de arquivos soltos.
