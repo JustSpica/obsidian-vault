@@ -78,58 +78,7 @@ Uma **árvore ordenada** é uma árvore enraizada em que a ordem dos filhos impo
 
 Duas árvores podem ter os mesmos nós e as mesmas relações de pai e filho, mas serem diferentes como árvores ordenadas se a ordem dos filhos for diferente.
 
-## Árvores binárias e posicionais
-
-Uma **árvore binária** é uma árvore definida recursivamente como uma raiz, uma subárvore da esquerda e uma subárvore da direita. Cada uma dessas subárvores pode ser vazia.
-
-Isso significa que uma árvore binária não é apenas uma árvore ordenada com no máximo dois filhos por nó. Se um nó tem apenas um filho, importa se ele está à esquerda ou à direita.
-
-- **Filho da esquerda:** Raiz da subárvore esquerda, quando ela existe.
-- **Filho da direita:** Raiz da subárvore direita, quando ela existe.
-- **Árvore vazia ou nula:** Árvore sem nós, normalmente usada como caso base.
-
-Uma **árvore posicional** generaliza essa ideia. Os filhos recebem posições inteiras, e uma posição pode estar ausente. Uma árvore `k`-ária limita essas posições a no máximo `k` filhos por nó.
-
-*OBS: Em árvores ordenadas, a ordem relativa dos filhos importa. Em árvores posicionais, a posição específica também importa, inclusive quando uma posição está faltando.*
-
-## Árvores cheias e completas
-
-Uma árvore cheia é aquela em que todos os nós internos possuem o grau de saída esperado para a árvore. No caso binário, isso significa que cada nó interno tem exatamente `2` filhos e que não existem nós internos com apenas `1` filho.
-
-Uma árvore `k`-ária completa é uma árvore `k`-ária em que todas as folhas estão na mesma profundidade e todos os nós internos possuem grau `k`.
-
-Para uma árvore `k`-ária completa de altura $h$, com $k > 1$, o número de folhas é:
-
-$$
-k^h
-$$
-
-O número de nós internos é:
-
-$$
-1 + k + k^2 + \cdots + k^{h-1} = \frac{k^h - 1}{k - 1}
-$$
-
-No caso binário, com $k = 2$, uma árvore completa de altura $h$ possui $2^h$ folhas e $2^h - 1$ nós internos.
-
-## Representação em C
-
-Uma forma simples de representar uma árvore com grau de saída máximo fixo é armazenar, em cada nó, o número de filhos usados e um [[Arrays|array]] de ponteiros para esses filhos.
-
-```c
-#define GSA 3
-
-struct ARV {
-    int gs;
-    struct ARV *f[GSA];
-};
-```
-
-Nesse exemplo, `GSA` define o grau de saída máximo da árvore. O campo `gs` guarda quantos filhos o nó possui de fato, enquanto `f` guarda os [[Ponteiros|ponteiros]] para esses filhos.
-
-Essa representação funciona bem quando há um limite conhecido de filhos por nó. Se o número de filhos puder variar muito, pode ser mais flexível armazenar os filhos em uma [[Listas encadeadas|lista encadeada]] ou em um array dinâmico.
-
 ## Referências
 
 - Baseado no PDF do La Salle [[500 Materiais/data-structure/aula-06-1.pdf|Estrutura de Dados - Aula 06]].
-- Baseado no livro [[500 Materiais/data-structure/books/algoritmos-teoria-pratica.pdf|Algoritmos: Teoria e Prática]], páginas 942-948.
+- Baseado no livro [[500 Materiais/data-structure/books/algoritmos-teoria-pratica.pdf|Algoritmos: Teoria e Prática]].
