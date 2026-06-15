@@ -5,7 +5,7 @@ description: Replicate the user's personal note-taking style for the Obsidian va
 
 # Writing style
 
-These rules describe how the user writes reference notes in this Obsidian vault. Notes are study material for college Computer Science topics (networking, linear algebra, etc.), written in **Brazilian Portuguese**. The reader is the user himself, weeks or months later. The goal is comprehension, not exhaustiveness — every choice in the style serves clarity, recall, and connecting concepts.
+These rules describe how the user writes reference notes in this Obsidian vault. Notes are study material for college Computer Science topics (networking, linear algebra, etc.), written in **Brazilian Portuguese**. The reader is the user himself, weeks or months later. The goal is durable comprehension: enough depth to study the topic later without reopening the source for the main idea, while still avoiding filler. Every choice in the style serves clarity, recall, and connecting concepts.
 
 When writing or editing notes inside `100 Notas de referência/`, follow these rules faithfully. The output must be indistinguishable from notes the user wrote himself.
 
@@ -16,7 +16,29 @@ When writing or editing notes inside `100 Notas de referência/`, follow these r
 - **Person:** mostly impersonal third person. Slip into first person ("eu posso", "eu preciso", "se eu dividir") **only** when walking through a concrete worked example or a calculation. Never in conceptual exposition.
 - **No padding:** no introductions like "Neste documento vamos ver...", no closing summaries like "Em resumo, vimos que...". Each section earns its place by adding information.
 - **No emojis. Ever.**
-- **Concision over completeness:** prefer the shortest sentence that still teaches the concept. If a sentence can be cut without losing meaning, cut it.
+- **Concise sentences, complete explanations:** prefer medium-short sentences and direct paragraphs, but do not remove mechanisms, examples, formulas, caveats, comparisons, or source details that are needed for understanding. Cut filler, not substance.
+
+## Depth and coverage
+
+Concision means avoiding filler, not making the note short. A note can and should be long when the reference material is dense.
+
+When source material is provided, extract the important study content before writing. The note should let the future reader reconstruct the main idea, mechanism, and practical consequences of the topic without reopening the source.
+
+For each important concept from the source, decide whether it needs one of these treatments:
+
+- **Definition:** What it is.
+- **Purpose:** Why it exists or what problem it solves.
+- **Mechanism:** How it works internally, procedurally, or mathematically.
+- **Example:** A concrete case, calculation, rule, diagram, or mini-scenario.
+- **Contrast:** How it differs from a nearby concept.
+- **Limitation:** Where it fails, becomes imprecise, or needs care.
+- **Connection:** How it links to other notes in the vault.
+
+Do not collapse a dense mechanism into one sentence just to keep the note short. If a source explains a process in steps, reproduce the process in steps. If a source gives formulas, criteria, algorithms, examples, edge cases, comparisons, or assumptions, preserve them unless they are clearly redundant.
+
+For math-heavy notes, preserve formulas and at least one worked example when the source provides enough material. A formula without interpretation is usually too shallow; an interpretation without the formula is usually too vague.
+
+A shallow note is worse than a long note with no filler. The target is not minimum length; the target is enough depth for studying.
 
 ## Document structure
 
@@ -25,7 +47,7 @@ Every note follows this skeleton:
 ```
 # <Title>
 
-<Opening definition: 1-3 sentences>
+<Opening definition: 1-5 sentences>
 
 <Optional context paragraph: where this concept lives, what it serves for, why it matters>
 
@@ -66,7 +88,7 @@ Rules for the opening:
 
 ### Context paragraph(s)
 
-After the definition, add 1-2 short paragraphs that situate the concept. Common patterns:
+After the definition, add 1-3 focused paragraphs that situate the concept when useful. Keep them direct, but do not make context superficial just to keep the note short. Common patterns:
 
 - **Where it lives in the stack:** "No [[IPv4]], o TCP aparece no campo **Protocolo** como `0x06`."
 - **Where the idea shows up in CS practice:** "Em computação, a ideia aparece em muitos lugares: posição `(x,y,z)`, cor `(R,G,B)`, embeddings, atributos de um item, características de um usuário, etc."
@@ -80,8 +102,9 @@ Use `##` for the main topical divisions of the note. Section titles are short no
 Inside each H2:
 
 1. Start with a sentence introducing what this section addresses.
-2. Then explain mechanism / list properties / show example.
-3. End with relevant `*OBS:*` notes if a subtlety needs flagging.
+2. Then explain the necessary mechanism, process, properties, assumptions, formulas, criteria, or edge cases from the source.
+3. Add a concrete example, calculation, mini-scenario, or comparison when the concept would otherwise stay abstract.
+4. End with relevant `*OBS:*` notes if a subtlety needs flagging.
 
 ### H3 sections
 
@@ -298,6 +321,8 @@ These recur across notes — when a note covers one of these topics, lean on the
 
 - **Protocol header breakdown** — `## Cabeçalho <protocolo>`, a one-line image embed `**Exemplo cabeçalho X:** ![[...]]`, then a bulleted list of fields with `- **Nome (N bits):** descrição.` format. Inline code for flag names. OBS afterward for surprises.
 - **Methods / techniques** — `## <Operation>` H2 with one H3 per method. Each H3 explains when to use it, then walks a worked example with math.
+- **Machine learning concepts** — define inputs, target, training data, prediction target, evaluation logic, and failure modes. If the source distinguishes training, validation, and test, preserve that distinction.
+- **Algorithms** — explain representation, training/induction procedure, prediction/inference procedure, decision criterion or objective, relevant hyperparameters/stopping criteria, and at least one concrete example if available.
 - **Types / classifications** — bulleted list of `- **Tipo:** definição` items. If types are very few, prose is fine.
 - **Problems / pitfalls** — `## Problemas típicos ...`. Bulleted scenarios, each with sub-bullets for what goes wrong.
 - **Concurrency in <protocol> servers** — short walkthrough of socket lifecycle steps (numbered list), then the threading/event-loop tradeoff.
@@ -309,6 +334,7 @@ These recur across notes — when a note covers one of these topics, lean on the
 - **Don't write meta-commentary** ("Nesta seção vamos explorar...", "Como mencionado anteriormente...").
 - **Don't apologize for complexity** ("Isso pode parecer confuso, mas...").
 - **Don't pad with synonyms** ("rápido, ágil, veloz" — pick one).
+- **Don't use concision as an excuse to omit substance** from the source material.
 - **Don't number every section.** Only number lists that are genuinely sequential.
 - **Don't moralize about best practices** beyond what's already a fact ("você deveria sempre..."). State the trade-off and let the reader decide.
 - **Don't write English words** that have a normal Portuguese form. Use `tabela`, not `table`; `rede`, not `network`. Reserve italic English for terms that don't translate cleanly.
@@ -317,4 +343,9 @@ These recur across notes — when a note covers one of these topics, lean on the
 
 ## A worked check
 
-When in doubt, ask: "Would this sentence appear in one of the existing notes?" If the answer is no — because of tone, padding, structure, or formatting — rewrite it. The model for the style isn't "what a textbook would say" or "what a tutorial would say". It's "what this user wrote in his other notes".
+When in doubt, ask two questions:
+
+1. "Would this sentence appear in one of the existing notes?"
+2. "Would this note let me study the topic later without reopening the source for the main idea?"
+
+If the answer to the first is no — because of tone, padding, structure, or formatting — rewrite it. If the answer to the second is no, add the missing mechanism, example, formula, caveat, comparison, or source detail. The model for the style isn't "what a textbook would say" or "what a tutorial would say". It's "what this user wrote in his other notes, with enough depth to study from later".
