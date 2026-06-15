@@ -23,3 +23,10 @@ Essas estruturas continuam sendo lineares, mas restringem a forma como inserçã
 
 - [[Pilhas]]: Estrutura LIFO, operações básicas, implementações e aplicações como call stack e parsing.
 - [[Filas]]: Estrutura FIFO, operações básicas, aplicações práticas e tipos como fila circular, dequeue e fila de prioridade.
+## Estruturas não lineares
+
+Estruturas em que um elemento pode se conectar a vários outros, formando hierarquias em vez de sequências.
+
+- [[Árvores]]: Conceito geral de árvore, terminologia (raiz, nós, folhas), árvores livres, grau de saída, profundidade, altura e subárvores.
+- [[Árvores binárias de busca]]: Árvores binárias, propriedade de ordenação, percursos (pré/em/pós-ordem), consultas, inserção, eliminação e altura esperada.
+- [[Árvores Red-Black]]: BST balanceada com bit de cor, propriedades red-black, rotações, inserção e eliminação com garantia $O(\lg n)$ no pior caso.
