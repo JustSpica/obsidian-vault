@@ -71,36 +71,69 @@ Nesse caso eu descubro que $\vec{R}=\vec{A}+\vec{B}+\vec{C}$ em soma vetorial.
 
 Igual ao método poligonal, aqui eu descubro que $\vec{R}=\vec{A}+\vec{B}$ em soma vetorial, e para eu calcular o módulo da minha resultante, eu uso a lei dos cossenos: $$R^2=A^2 + B^2 + 2.A.B.\cos{θ}$$
 
-## Formulas para lembrar
+## Relações entre vetores
 
-### Em R2 (x, y)
+Além de somar vetores, é comum precisar saber como dois vetores se posicionam um em relação ao outro: se apontam na mesma direção, se formam um ângulo reto, ou qual a "sombra" de um sobre o outro. Essas três relações se apoiam em conceitos já vistos (multiplicação por escalar e produto escalar).
 
-- **Distancia entre dois pontos:** Dados $A(x_a, y_a)$ e $B(x_b, y_b)$: 
-$$d_{AB}=\sqrt{(x_b-x_a)^2 + (y_b-y_a)^2}$$
-- **Ponto medio:** Dados $A(x_1, y_1)$ e $B(x_2, y_2)$, o ponto medio $M(x_m, y_m)$ e: 
-$$M=\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)$$
-- **Baricentro (triangulo):** Para $A(x_a,y_a)$, $B(x_b,y_b)$ e $C(x_c,y_c)$: 
-$$G=\left(\frac{x_A+x_B+x_C}{3},\frac{y_A+y_B+y_C}{3}\right)$$
-- **Reta:** Coeficiente angular (por 2 pontos), dados $A(x_1,y_1)$ e $B(x_2,y_2)$ com $x_2\neq x_1$: 
-$$m=\frac{y_2-y_1}{x_2-x_1}$$
-- **Forma ponto-inclinacao:** Dado um ponto $P(x_0,y_0)$ na reta: 
-$$(y-y_0)=m(x-x_0)$$
-*OBS: se $x_2=x_1$, a reta e vertical e fica $x=x_1$ (nao existe coeficiente angular finito).* 
+### Vetores paralelos
 
-### Em R3 (x, y, z)
+Dois vetores são **paralelos** (ou colineares) quando têm a mesma direção, independente do sentido ou do módulo. Isso acontece quando um é **múltiplo escalar** do outro, ou seja, quando existe um número real $k$ tal que $\vec{v}=k\cdot\vec{w}$.
 
-- **Ponto medio:** Dados $A(x_1, y_1, z_1)$ e $B(x_2, y_2, z_2)$, o ponto medio $M(x_m, y_m, z_m)$ é: 
-$$M=\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2},\frac{z_1+z_2}{2}\right)$$
-- **Baricentro (triangulo).** Para $A(x_a,y_a,z_a)$, $B(x_b,y_b,z_b)$ e $C(x_c,y_c,z_c)$: 
-$$G=\left(\frac{x_A+x_B+x_C}{3},\frac{y_A+y_B+y_C}{3},\frac{z_A+z_B+z_C}{3}\right)$$
-- **Modulo de um vetor.** Se $\vec{v}=(v_x,v_y,v_z)$: 
-$$\lvert\vec{v}\rvert=\sqrt{v_x^2+v_y^2+v_z^2}$$
-- **Angulo entre dois vetores (produto escalar):** 
-$$\cos{\theta}=\frac{\vec{v}\cdot\vec{w}}{\lvert\vec{v}\rvert\,\lvert\vec{w}\rvert}$$
+Na prática, isso equivale a dizer que as componentes dos dois vetores são proporcionais. Em $\mathbb{R}^3$, dados $\vec{v}=(x_1,y_1,z_1)$ e $\vec{w}=(x_2,y_2,z_2)$:
+
+$$\frac{x_1}{x_2}=\frac{y_1}{y_2}=\frac{z_1}{z_2}$$
+
+Se todas as razões derem o mesmo valor, esse valor é o próprio $k$ e os vetores são paralelos. Por exemplo, para $\vec{u}=(2,3,4)$ e $\vec{v}=(4,6,8)$:
+
+$$\frac{2}{4}=\frac{3}{6}=\frac{4}{8}=\frac{1}{2}\Longrightarrow \text{paralelos}$$
+
+Já para $\vec{u}=(1,7,-1)$ e $\vec{w}=(2,14,3)$, eu testo as razões:
+
+$$\frac{1}{2}=\frac{7}{14}=0{,}5 \quad\text{mas}\quad \frac{-1}{3}\approx-0{,}33$$
+
+Como a terceira razão é diferente das outras, os vetores **não** são paralelos.
+
+*OBS: essa condição também serve para encontrar uma componente desconhecida. Se eu sei que $\vec{v}=(3,6,9)$ e $\vec{w}=(k,4,6)$ são paralelos, basta resolver $\frac{3}{k}=\frac{6}{4}=\frac{9}{6}$, que dá $k=2$.*
+
+### Vetores perpendiculares
+
+Dois vetores são **perpendiculares** (ou ortogonais) quando formam um ângulo de 90° entre si. O critério é direto: o **produto escalar entre eles precisa ser zero**.
+
+$$\vec{v}\cdot\vec{w}=0 \Longrightarrow \vec{v}\perp\vec{w}$$
+
+Isso vem da própria fórmula do ângulo entre vetores ($\cos\theta=\frac{\vec{v}\cdot\vec{w}}{|\vec{v}|\,|\vec{w}|}$): quando $\theta=90°$, $\cos\theta=0$, e o numerador precisa zerar.
+
+Por exemplo, para $\vec{v}=(1,2,3)$ e $\vec{w}=(-2,1,0)$:
+
+$$\vec{v}\cdot\vec{w}=(1)(-2)+(2)(1)+(3)(0)=-2+2+0=0\Longrightarrow \text{perpendiculares}$$
+
+*OBS: assim como no paralelismo, o critério serve para descobrir uma componente. Para $\vec{u}=(k,1,-2)$ e $\vec{v}=(2,3,1)$ serem perpendiculares, faço $\vec{u}\cdot\vec{v}=2k+3-2=2k+1=0$, logo $k=-\frac{1}{2}$.*
+
+### Projeção ortogonal
+
+A **projeção ortogonal** de um vetor sobre outro pode ser comparada à sombra que esse vetor projeta sobre a direção do outro quando o sol está a pino: a sombra tem o tamanho da parte do vetor que "anda na mesma direção" do segundo, sem profundidade nenhuma.
+
+A projeção de $\vec{v}$ sobre $\vec{w}$ é um vetor com a mesma direção de $\vec{w}$, dado por:
+
+$$\text{proj}_{\vec{w}}\,\vec{v}=\frac{\vec{v}\cdot\vec{w}}{|\vec{w}|^2}\,\vec{w}$$
+
+O escalar $\frac{\vec{v}\cdot\vec{w}}{|\vec{w}|^2}$ diz quantas vezes o vetor $\vec{w}$ cabe na sombra, e multiplicá-lo por $\vec{w}$ devolve o resultado já na direção certa.
+
+Por exemplo, para projetar $\vec{v}=(1,2,3)$ sobre $\vec{w}=(4,-1,2)$, eu calculo primeiro o produto escalar e o módulo ao quadrado:
+
+$$\vec{v}\cdot\vec{w}=(1)(4)+(2)(-1)+(3)(2)=4-2+6=8$$
+
+$$|\vec{w}|^2=4^2+(-1)^2+2^2=16+1+4=21$$
+
+Aplicando na fórmula:
+
+$$\text{proj}_{\vec{w}}\,\vec{v}=\frac{8}{21}(4,-1,2)=\left(\frac{32}{21},-\frac{8}{21},\frac{16}{21}\right)$$
+
+*OBS: se $\vec{v}$ e $\vec{w}$ forem perpendiculares, $\vec{v}\cdot\vec{w}=0$ e a projeção dá o vetor nulo. Faz sentido, porque um vetor perpendicular não tem nenhuma sombra na direção do outro.*
 
 ## Referências
 
-- Baseado no PDF do La salle [[GAAL-aula-04.pdf|GA-AL - Aula 04]], [[GAAL-aula-05.pdf|GA-AL - Aula 05]] e [[GAAL-aula-06.pdf|GA-AL - Aula 06]].
+- Baseado no PDF do La salle [[GAAL-aula-04.pdf|GA-AL - Aula 04]], [[GAAL-aula-05.pdf|GA-AL - Aula 05]], [[GAAL-aula-06.pdf|GA-AL - Aula 06]] e [[GAAL-aula-07.pdf|GA-AL - Aula 07]].
 - O vídeo [MEGA AULA COMPLETA de VETORES!!!](https://www.youtube.com/watch?v=eAAKzZcbITI) tem uma boa explicação sobre vetores e soma de vetores gerais.
 - O vídeo [SOMA de VETORES MÉTODO DAS PROJEÇÕES EXERCÍCIOS](https://www.youtube.com/watch?v=iR4lAzl6_qM) é um excelente vídeo de resolvendo exercicios para vetores.
 - O vídeo [Decomposição de Vetores - Física do Zero](https://www.youtube.com/watch?v=AX78Ce6gSLU) também explica de forma clara e mais curta sobre a decomposição de vetores para física.
