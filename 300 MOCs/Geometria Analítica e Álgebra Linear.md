@@ -17,7 +17,15 @@ Assuntos que dão a linguagem matemática mínima para o restante da disciplina.
 
 Vetores descrevem grandezas com módulo, direção e sentido. Eles permitem representar deslocamentos, posições relativas, componentes em eixos e operações geométricas no plano e no espaço.
 
-- [[Vetores]]: Componentes, módulo, vetores opostos, multiplicação por escalar, soma de vetores, projeções e fórmulas úteis em R2 e R3.
+- [[Vetores]]: Componentes, módulo, vetores opostos, multiplicação por escalar, soma de vetores, projeções.
+
+## Geometria analítica plana
+
+A geometria analítica plana traduz figuras do plano cartesiano em equações. Pontos viram pares ordenados, retas viram equações do 1º grau, curvas como a circunferência viram equações do 2º grau, e propriedades geométricas (distância, alinhamento, ângulo, área, posições relativas) viram cálculos com coordenadas.
+
+- [[Estudo do ponto]]: Plano cartesiano, quadrantes, bissetrizes, distância entre pontos, ponto médio, mediana e baricentro, condição de alinhamento e área de um triângulo por determinante.
+- [[Estudo da reta]]: Equação geral e fundamental, coeficiente angular e inclinação, posições relativas, mediatriz, ângulo entre retas e distância entre ponto e reta.
+- [[Circunferência]]: Elementos, comprimento e área, equação reduzida e geral, extração de centro e raio, diferença para o círculo e posições relativas de ponto e reta em relação à circunferência.
 
 ## Matrizes
 
